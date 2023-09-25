@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'home')->name('home');
+Route::view('/', 'home2')->name('home');
 Route::view('/pricing', 'pricing')->name('pricing');
 
 Route::view('posts/just-ship-v1', 'posts.just-ship-v1')->name('posts.just-ship-v1');
+
+Route::view('docs', 'docs.index')->name('docs.home');
