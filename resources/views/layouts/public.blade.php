@@ -5,7 +5,11 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
-    <title>Community CAD</title>
+    <title>Community CAD - FiveM CAD/MDT/CMS System</title>
+
+    <meta
+        content="CommunityCAD is a new all-in-one solution to running your community. Provides a seamless user experience from the time they apply through their RP experience!"
+        name="description">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
