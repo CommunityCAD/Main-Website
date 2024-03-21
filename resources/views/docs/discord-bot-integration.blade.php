@@ -140,9 +140,8 @@
                         <li>New Pending Accounts if not using the application system</li>
                     </ul>
 
-                    <p>Some of these are already in the system to be configured. They will not work. Check the discord for
+                    <p>Some of these are already in the system to be configured. They WILL NOT work. Check the discord for
                         updates on the status of these alerts.</p>
-
                 </div>
 
                 <div class="space-y-3" id="step1">
@@ -172,7 +171,7 @@
                             </div>
                             <div class="ml-3">
                                 <div class="text-sm text-yellow-700">
-                                    <p>Do not change any of the permissions of the bot. It WILL NOT have
+                                    <p>Do not change any of the permissions of the bot. It DOES NOT have
                                         Administrator perms. Only to send and manage messages. Changing these will make the
                                         bot
                                         not work.</p>
@@ -225,7 +224,8 @@
                             </div>
                             <div class="ml-3">
                                 <div class="text-sm text-blue-700">
-                                    <p>I would suggest using a catagory so that the bot has permissions to view and type
+                                    <p>I would suggest using a catagory so that the bot has permissions to view and send
+                                        messages
                                         into the channels.</p>
                                 </div>
                             </div>
