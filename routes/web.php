@@ -19,3 +19,4 @@ Route::view('/pricing', 'pricing')->name('pricing');
 Route::view('posts/just-ship-v1', 'posts.just-ship-v1')->name('posts.just-ship-v1');
 
 Route::view('docs', 'docs.index')->name('docs.home');
+Route::view('docs/discord-bot-intigration', 'docs.discord-bot-intigration')->name('docs.discord-bot-intigration');
