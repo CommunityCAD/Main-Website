@@ -1,22 +1,6 @@
 @extends('layouts.docs')
 
 @section('content')
-    <header
-        class="sticky top-0 z-50 flex items-center justify-between px-3 py-2 border-b shadow-lg bg-white/90 backdrop-blur-sm border-slate-400/40">
-        <div class="flex items-center flex-grow basis-0">
-            <a class="text-lg font-semibold tracking-tight text-slate-900" href="">
-                Community CAD Docs
-            </a>
-        </div>
-
-        <div class="items-center justify-end flex-grow hidden basis-0 md:flex">
-            <a class="px-4 py-2 text-sm font-semibold rounded bg-slate-900 text-slate-50 transition ease-in-out delay-75 hover:scale-105 duration-200"
-                href="{{ route('home') }}">
-                Go to homepage
-            </a>
-        </div>
-    </header>
-
     <main class="relative flex justify-center mx-auto max-w-8xl sm:px-2 lg:px-8 xl:px-12">
 
         @include('inc.docs.sidebar')
