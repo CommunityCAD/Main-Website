@@ -33,6 +33,13 @@
                             Discord Logging Integration
                         </a>
                     </li>
+
+                    <li>
+                        <a class=" hover:text-black @if (request()->is('docs/settings-page')) !text-black underline @endif"
+                            href="{{ route('docs.settings-page') }}">
+                            Settings Page
+                        </a>
+                    </li>
                 </ul>
             </li>
 
