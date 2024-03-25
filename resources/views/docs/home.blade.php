@@ -29,6 +29,22 @@
                         This is still a work in progress but will continue to add more resources here as I get time to help
                         communities with the best CAD system on the market!
                     </p>
+
+                    <p>These are just rough drafts and may contain grammer or spelling errors. Please bear with me while I
+                        continue to work on this.</p>
+                </div>
+
+                <div class="space-y-3" id="questions">
+
+                    <h3 class="mt-16 text-2xl font-semibold tracking-tight">
+                        Still have questions?
+                    </h3>
+
+                    <p class="">
+                        Still have questions? <a class="underline hover:no-underline" href="https://discord.gg/tmZWX7q2yZ"
+                            target="_BLANK">Talk
+                            to support</a>.
+                    </p>
                 </div>
 
             </article>
