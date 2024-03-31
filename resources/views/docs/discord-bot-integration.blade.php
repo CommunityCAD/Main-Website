@@ -48,7 +48,7 @@
                         <li>New Pending Accounts if not using the application system</li>
                     </ul>
 
-                    <p>Some of these are already in the system to be configured. They WILL NOT work. Check the discord for
+                    <p>Some of these are already in the system to be configured. They WILL NOT work. Check our Discord for
                         updates on the status of these alerts.</p>
                 </div>
 
@@ -151,8 +151,10 @@
                         channels that you wish to send the alerts to.
                     </p>
 
-                    <p class="">Right click on the channel name in Discord and choose
-                        "Copy Channel ID". Paste the Channel ID into the alert you wish to be posted in that channel.</p>
+                    <p class="">Make sure you have developer mode enabled on discord then right click on the channel
+                        name in Discord
+                        and choose "Copy Channel ID". Paste the Channel ID into the alert you wish to be posted in that
+                        channel.</p>
                     <div class="">
                         <img alt="Discord Channel Setting Page" class="w-full mx-auto"
                             src="{{ asset('images/docs/discord-integration-discord-channels-page.png') }}">

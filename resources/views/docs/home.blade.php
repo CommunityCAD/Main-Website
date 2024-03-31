@@ -26,11 +26,11 @@
                     </h3>
 
                     <p class="">
-                        This is still a work in progress but will continue to add more resources here as I get time to help
-                        communities with the best CAD system on the market!
+                        This is still a work in progress but I will continue to add more resources here as I get time to
+                        help communities with the best CAD system on the market!
                     </p>
 
-                    <p>These are just rough drafts and may contain grammer or spelling errors. Please bear with me while I
+                    <p>These are just rough drafts and may contain grammar or spelling errors. Please bear with me while I
                         continue to work on this.</p>
                 </div>
 

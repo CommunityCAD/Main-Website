@@ -31,8 +31,8 @@
                     </h3>
 
                     <p class="">
-                        This is a current overview of the settings you can edit in your CommunityCAD System. Sorry they are
-                        a little ugly looking but I plan on a settings upgrate soon!
+                        This is a current overview of the settings you can edit in your Community CAD System. Sorry they are
+                        a little ugly looking but I plan on a settings upgrade soon!
                     </p>
 
                     <p class="">
@@ -112,7 +112,7 @@
 
                     <p class="">
                         If you have the "members must apply" setting to True then this setting will be applied. If an
-                        applicant applies under this age then thier application will flag for an admin to review it.
+                        applicant applies under this age then their application will flag for an admin to review it.
                     </p>
                 </div>
 
