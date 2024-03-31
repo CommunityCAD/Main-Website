@@ -31,7 +31,7 @@
                     </h3>
 
                     <p class="">
-                        CommunityCAD is proud to announce that we have started integrating Discord into the CAD system!
+                        Community CAD is proud to announce that we have started integrating Discord into the CAD system!
                         Right now we have the following options to be logged:
                     </p>
 
@@ -151,7 +151,7 @@
                         channels that you wish to send the alerts to.
                     </p>
 
-                    <p class="">Make sure you have developer mode enabled on discord then right click on the channel
+                    <p class="">Make sure you have developer mode enabled on Discord then right click on the channel
                         name in Discord
                         and choose "Copy Channel ID". Paste the Channel ID into the alert you wish to be posted in that
                         channel.</p>
