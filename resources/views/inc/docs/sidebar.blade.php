@@ -20,17 +20,11 @@
                     Getting started
                 </h3>
 
-                <ul class="pl-3 mt-3 space-y-2 text-slate-500" role="list">
+                <ul class="pl-3 mt-3 space-y-2" role="list">
                     <li>
-                        <a class="hover:text-black" href="#">
-                            Quick start guide - Coming Soon!
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class=" hover:text-black @if (request()->is('docs/discord-bot-integration')) !text-black underline @endif"
-                            href="{{ route('docs.discord-bot-integration') }}">
-                            Discord Logging Integration
+                        <a class="hover:text-black @if (request()->is('docs/get-started')) !text-black underline @endif"
+                            href="{{ route('docs.get-started') }}">
+                            Get Started
                         </a>
                     </li>
 
@@ -38,6 +32,13 @@
                         <a class=" hover:text-black @if (request()->is('docs/settings-page')) !text-black underline @endif"
                             href="{{ route('docs.settings-page') }}">
                             Settings Page
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class=" hover:text-black @if (request()->is('docs/discord-bot-integration')) !text-black underline @endif"
+                            href="{{ route('docs.discord-bot-integration') }}">
+                            Discord Logging Integration
                         </a>
                     </li>
                 </ul>

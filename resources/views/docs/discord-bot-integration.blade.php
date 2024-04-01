@@ -179,31 +179,32 @@
                 </div>
             </article>
 
-            {{-- <dl class="flex pt-6 mt-6 border-t border-slate-200">
-                <!-- <div class="mr-auto text-left"> -->
-                <!--   <dt class="text-sm font-normal tracking-tight text-slate-600"> -->
-                <!--     Previous -->
-                <!--   </dt> -->
+            <dl class="flex pt-6 mt-6 border-t border-slate-200">
+                <div class="mr-auto text-left">
+                    <dt class="text-sm font-normal tracking-tight">
+                        Previous
+                    </dt>
 
-                <!--   <dd class="mt-1"> -->
-                <!--     <a class="text-base font-semibold text-slate-900 hover:underline" href="#"> -->
-                <!--       Blah -->
-                <!--     </a> -->
-                <!--   </dd> -->
-                <!-- </div> -->
+                    <dd class="mt-1">
+                        <a class="text-base font-semibold hover:underline" href="{{ route('docs.settings-page') }}">
+                            Settings Page
+                        </a>
+                    </dd>
+                </div>
 
-                <div class="ml-auto text-right">
-                    <dt class="text-sm font-normal tracking-tight text-slate-600">
+                {{-- <div class="ml-auto text-right">
+                    <dt class="text-sm font-normal tracking-tight">
                         Next
                     </dt>
 
                     <dd class="mt-1">
-                        <a class="text-base font-semibold text-slate-900 hover:underline" href="#">
-                            How does Spinal work?
+                        <a class="text-base font-semibold hover:underline"
+                            href="{{ route('docs.discord-bot-integration') }}">
+                            Discord Bot Integration
                         </a>
                     </dd>
-                </div>
-            </dl> --}}
+                </div> --}}
+            </dl>
         </div>
     </main>
 @endsection

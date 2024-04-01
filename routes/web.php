@@ -19,5 +19,6 @@ Route::view('/pricing', 'pricing')->name('pricing');
 Route::view('posts/just-ship-v1', 'posts.just-ship-v1')->name('posts.just-ship-v1');
 
 Route::view('/docs', 'docs.home')->name('docs.home');
+Route::view('docs/get-started', 'docs.get-started')->name('docs.get-started');
 Route::view('docs/discord-bot-integration', 'docs.discord-bot-integration')->name('docs.discord-bot-integration');
 Route::view('docs/settings-page', 'docs.settings-page')->name('docs.settings-page');
