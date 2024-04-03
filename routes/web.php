@@ -22,3 +22,8 @@ Route::view('/docs', 'docs.home')->name('docs.home');
 Route::view('docs/get-started', 'docs.get-started')->name('docs.get-started');
 Route::view('docs/discord-bot-integration', 'docs.discord-bot-integration')->name('docs.discord-bot-integration');
 Route::view('docs/settings-page', 'docs.settings-page')->name('docs.settings-page');
+
+
+Route::view('docs/api/get-started', 'docs.api.get-started')->name('docs.api.get-started');
+Route::view('docs/api/panic-button', 'docs.api.panic-button')->name('docs.api.panic-button');
+Route::view('docs/api/911-call', 'docs.api.911-call')->name('docs.api.911-call');

@@ -65,8 +65,21 @@
 
                 <ul class="pl-3 mt-3 space-y-2" role="list">
                     <li>
-                        <a class="text-slate-600 hover:text-slate-800" href="#">
-
+                        <a class=" hover:text-black @if (request()->is('docs/api/get-started')) !text-black underline @endif"
+                            href="#">
+                            Get Started - Coming Soon
+                        </a>
+                    </li>
+                    <li>
+                        <a class=" hover:text-black @if (request()->is('docs/api/panic-button')) !text-black underline @endif"
+                            href="#">
+                            Panic Button - Coming Soon
+                        </a>
+                    </li>
+                    <li>
+                        <a class=" hover:text-black @if (request()->is('docs/api/911-call')) !text-black underline @endif"
+                            href="#">
+                            911 Call - Coming Soon
                         </a>
                     </li>
                 </ul>
