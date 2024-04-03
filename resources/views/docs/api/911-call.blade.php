@@ -17,8 +17,7 @@
                         </div>
                         <div class="ml-3">
                             <div class="text-sm text-red-700">
-                                <p>API is in Alpha and may change at any time. Please do not use yet. This is for testers
-                                    only.</p>
+                                <p>API is in Alpha and may change at any time.</p>
                             </div>
                         </div>
                     </div>
@@ -94,7 +93,7 @@
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">Required</td>
                             </tr>
 
-                            <tr>
+                            {{-- <tr>
                                 <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
                                     type (optional)</td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">number</td>
@@ -102,7 +101,7 @@
                                     (EMS)
                                 </td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">1</td>
-                            </tr>
+                            </tr> --}}
 
                         </tbody>
                     </table>
@@ -176,14 +175,14 @@
 
             </article>
 
-            {{-- <dl class="flex pt-6 mt-6 border-t border-slate-200">
+            <dl class="flex pt-6 mt-6 border-t border-slate-200">
                 <div class="mr-auto text-left">
                     <dt class="text-sm font-normal tracking-tight">
                         Previous
                     </dt>
 
                     <dd class="mt-1">
-                        <a class="text-base font-semibold hover:underline" href="{{ route('docs.get-started') }}">
+                        <a class="text-base font-semibold hover:underline" href="{{ route('docs.api.get-started') }}">
                             Get Started
                         </a>
                     </dd>
@@ -195,13 +194,12 @@
                     </dt>
 
                     <dd class="mt-1">
-                        <a class="text-base font-semibold hover:underline"
-                            href="{{ route('docs.discord-bot-integration') }}">
-                            Discord Bot Integration
+                        <a class="text-base font-semibold hover:underline" href="{{ route('docs.api.panic-button') }}">
+                            Panic Button
                         </a>
                     </dd>
                 </div>
-            </dl> --}}
+            </dl>
         </div>
     </main>
 @endsection

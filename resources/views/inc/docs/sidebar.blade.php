@@ -60,28 +60,29 @@
 
             <li>
                 <h3 class="font-semibold tracking-tight text-slate-900">
-                    API Resources - Coming Soon!
+                    API Resources
                 </h3>
 
                 <ul class="pl-3 mt-3 space-y-2" role="list">
                     <li>
                         <a class=" hover:text-black @if (request()->is('docs/api/get-started')) !text-black underline @endif"
-                            href="#">
-                            Get Started - Coming Soon
-                        </a>
-                    </li>
-                    <li>
-                        <a class=" hover:text-black @if (request()->is('docs/api/panic-button')) !text-black underline @endif"
-                            href="#">
-                            Panic Button - Coming Soon
+                            href="{{ route('docs.api.get-started') }}">
+                            Get Started
                         </a>
                     </li>
                     <li>
                         <a class=" hover:text-black @if (request()->is('docs/api/911-call')) !text-black underline @endif"
-                            href="#">
-                            911 Call - Coming Soon
+                            href="{{ route('docs.api.911-call') }}">
+                            911 Call
                         </a>
                     </li>
+                    <li>
+                        <a class=" hover:text-black @if (request()->is('docs/api/panic-button')) !text-black underline @endif"
+                            href="{{ route('docs.api.panic-button') }}">
+                            Panic Button
+                        </a>
+                    </li>
+
                 </ul>
             </li>
         </ul>
