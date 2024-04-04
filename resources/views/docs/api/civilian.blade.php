@@ -325,8 +325,7 @@
         "medical_records": [],
         "vehicles": [],
         "weapons": []
-    },
-    ...
+    }
 ]
                             </pre>
                         </span>
