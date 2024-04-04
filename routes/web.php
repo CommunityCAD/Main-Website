@@ -27,3 +27,5 @@ Route::view('docs/settings-page', 'docs.settings-page')->name('docs.settings-pag
 Route::view('docs/api/get-started', 'docs.api.get-started')->name('docs.api.get-started');
 Route::view('docs/api/panic-button', 'docs.api.panic-button')->name('docs.api.panic-button');
 Route::view('docs/api/911-call', 'docs.api.911-call')->name('docs.api.911-call');
+
+Route::view('docs/api/civilian', 'docs.api.civilian')->name('docs.api.civilian');

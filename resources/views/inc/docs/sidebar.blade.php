@@ -83,6 +83,13 @@
                         </a>
                     </li>
 
+                    <li>
+                        <a class=" hover:text-black @if (request()->is('docs/api/civilian')) !text-black underline @endif"
+                            href="{{ route('docs.api.civilian') }}">
+                            Civilian Endpoints
+                        </a>
+                    </li>
+
                 </ul>
             </li>
         </ul>
