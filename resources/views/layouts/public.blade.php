@@ -45,8 +45,7 @@
             <!-- Logo -->
             <div class="text-indigo-500 md:order-1 flex items-center">
                 <!-- Heroicon - Chip Outline -->
-                <img alt="CommunityCAD Logo" class="w-12"
-                    src="https://cdn.discordapp.com/attachments/632810626363686922/1132129051411230811/communitycad.png">
+                <img alt="CommunityCAD Logo" class="w-12" src="{{ asset('images/default_images/communitycad.png') }}">
                 <a class="ml-4 text-lg" href="{{ route('home') }}">CommunityCAD</a>
             </div>
             <div class="text-gray-500 order-3 w-full md:w-auto md:order-2">
@@ -56,6 +55,7 @@
                     <li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#features">Features</a></li>
                     <li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#gallery">Gallery</a></li>
                     <li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#reviews">Reviews</a></li>
+                    <li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="{{ route('docs.home') }}">Docs</a></li>
                 </ul>
             </div>
             <div class="order-2 md:order-3">

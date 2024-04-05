@@ -41,6 +41,19 @@
                             Discord Logging Integration
                         </a>
                     </li>
+
+                    <li>
+                        <a class=" hover:text-black @if (request()->is('docs/getting_started/road_map')) !text-black underline @endif"
+                            href="{{ route('docs.getting_started.road_map') }}">
+                            Road Map
+                        </a>
+                    </li>
+                    <li>
+                        <a class=" hover:text-black @if (request()->is('docs/getting_started/known_issues')) !text-black underline @endif"
+                            href="{{ route('docs.getting_started.known_issues') }}">
+                            Known Issues
+                        </a>
+                    </li>
                 </ul>
             </li>
 
@@ -89,6 +102,15 @@
                             Civilian Endpoints
                         </a>
                     </li>
+
+                </ul>
+            </li>
+            <li>
+                <h3 class="font-semibold tracking-tight text-slate-900">
+                    Resources
+                </h3>
+
+                <ul class="pl-3 mt-3 space-y-2" role="list">
 
                 </ul>
             </li>
