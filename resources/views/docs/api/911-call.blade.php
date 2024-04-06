@@ -72,7 +72,7 @@
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">string</td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">What is happening
                                 </td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm">Required</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-red-500">Required</td>
                             </tr>
 
                             <tr>
@@ -81,7 +81,7 @@
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">string</td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">Where is it happening
                                 </td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm">Required</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-red-500">Required</td>
                             </tr>
 
                             <tr>
@@ -90,7 +90,26 @@
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">string</td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">Where is it happening
                                 </td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm">Required</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-red-500">Required</td>
+                            </tr>
+
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
+                                    type</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm">number</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm">Who you need. 1: LEO; 2: Fire; 3:EMS;
+                                </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-yellow-500">1</td>
+                            </tr>
+
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
+                                    type</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm">string</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm">How you got the call. "911 CALL",
+                                    "NON-EMERGENCY", "OFFICER", "FIRE"
+                                </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-yellow-500">911 CALL</td>
                             </tr>
 
                             {{-- <tr>
