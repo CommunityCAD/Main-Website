@@ -23,7 +23,7 @@
                     </div>
                 </div>
 
-                <div class="rounded-md bg-yellow-50 p-4 my-3">
+                {{-- <div class="rounded-md bg-yellow-50 p-4 my-3">
                     <div class="flex">
                         <div class="flex-shrink-0">
                             <svg aria-hidden="true" class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
@@ -38,7 +38,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
                 <header class="">
                     <p class="text-base font-medium text-slate-300">
