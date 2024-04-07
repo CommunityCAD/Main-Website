@@ -9,12 +9,12 @@
 
 <input class="hidden peer" id="navigation" name="navigation" type="checkbox" />
 
-<div
-    class="fixed top-[3.5rem] h-screen shadow-xl px-4 left-0 hidden peer-checked:block lg:relative lg:top-0 lg:h-auto lg:px-0 lg:block lg:flex-none lg:shadow-none">
+<div class="fixed top-[3.5rem] h-screen shadow-xl px-4 left-0 hidden peer-checked:block lg:relative lg:top-0 lg:h-auto lg:px-0 lg:block lg:flex-none lg:shadow-none"
+    id="">
     <div class="absolute inset-y-0 right-0 w-full lg:w-[50vw] bg-white lg:bg-slate-50"></div>
 
-    <nav class="sticky top-[4.5rem] w-64 pr-8 text-base lg:text-sm xl:w-72 xl:pr-16">
-        <ul class="-ml-0.5 h-[calc(100vh-4.5rem)] overflow-y-auto py-7 pl-0.5 space-y-8" role="list">
+    <nav class="sticky top-[4.5rem] w-64 pr-4 text-base lg:text-sm xl:w-72 xl:pr-16 mb-4 overflow-y-auto ">
+        <ul class="-ml-0.5 h-[calc(100vh-4.5rem)] py-7 pl-0.5 space-y-8" role="list">
             <li>
                 <h3 class="font-semibold tracking-tight text-slate-900">
                     Getting started
@@ -82,6 +82,52 @@
                             href="{{ route('docs.api.get-started') }}">
                             Get Started
                         </a>
+                    </li>
+
+                    <li x-data="{ isOpen: @if (request()->is('docs/api/emergency/*')) true @else false @endif }">
+                        <button @click="isOpen = !isOpen" @keydown.escape="isOpen = false"
+                            class="hover:text-black flex items-center">
+                            Emergency
+                            <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="heroicon-ui"
+                                    d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <ul class="mt-2 py-1 space-y-2 z-20 border-l-2 border-black" x-show="isOpen">
+                            <li class="ml-2">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/panic')) !text-black underline @endif"
+                                    href="{{ route('docs.api.emergency.panic') }}">
+                                    Panic
+                                </a>
+                            </li>
+
+                            <li class="ml-2">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/unit_status')) !text-black underline @endif"
+                                    href="{{ route('docs.api.emergency.unit_status') }}">
+                                    Unit Status
+                                </a>
+                            </li>
+
+                            <li class="ml-2">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/unit_location')) !text-black underline @endif"
+                                    href="{{ route('docs.api.emergency.unit_location') }}">
+                                    Unit Location
+                                </a>
+                            </li>
+                            <li>
+                                <hr>
+                            </li>
+                            <li class="ml-2">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/get_calls')) !text-black underline @endif"
+                                    href="{{ route('docs.api.emergency.get_calls') }}">
+                                    Get Calls
+                                </a>
+                            </li>
+
+                        </ul>
                     </li>
                     <li>
                         <a class=" hover:text-black @if (request()->is('docs/api/911-call')) !text-black underline @endif"

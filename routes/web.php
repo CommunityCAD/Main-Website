@@ -32,3 +32,8 @@ Route::view('docs/api/panic-button', 'docs.api.panic-button')->name('docs.api.pa
 Route::view('docs/api/911-call', 'docs.api.911-call')->name('docs.api.911-call');
 
 Route::view('docs/api/civilian', 'docs.api.civilian')->name('docs.api.civilian');
+
+Route::view('docs/api/emergency/panic', 'docs.api.emergency.panic')->name('docs.api.emergency.panic');
+Route::view('docs/api/emergency/unit_status', 'docs.api.emergency.unit_status')->name('docs.api.emergency.unit_status');
+Route::view('docs/api/emergency/unit_location', 'docs.api.emergency.unit_location')->name('docs.api.emergency.unit_location');
+Route::view('docs/api/emergency/get_calls', 'docs.api.emergency.get_calls')->name('docs.api.emergency.get_calls');
