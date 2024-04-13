@@ -37,14 +37,13 @@
                     </div>
 
                     <div class="bg-gray-600 p-4 rounded-lg">
-                        <h3 class="text-2xl">Settings Page Rework</h3>
-                        <p>Admin setting pages getting expanded and face lift to make it easier to find and change settings.
+                        <h3 class="text-2xl">Staff Logs</h3>
+                        <p>Add Staff logs into the Admin menu and set up Discord Logging.
                         </p>
-
                         <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
+                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 10%"></div>
                         </div>
-                        <p class="text-gray-400 text-sm">Expected Launch: 4/10/24</p>
+                        <p class="text-gray-400 text-sm">Expected Launch: 4/16/2024</p>
                     </div>
 
                 </div>
@@ -62,10 +61,11 @@
                     </div>
 
                     <div class="bg-gray-600 p-4 rounded-lg">
-                        <h3 class="text-2xl">Staff Logs</h3>
-                        <p>Add Staff logs into the Admin menu and set up Discord Logging.
+                        <h3 class="text-2xl">In CAD Message System</h3>
+                        <p>Just like in the real CAD system (Ie: Spillman Flex, BeaconCAD etc) they allow in system
+                            Messaging between units and Dispatchers to talk with each other outside of the Radio System.
                         </p>
-                        <p class="text-gray-400 text-sm">Start Development: No ETA</p>
+                        <p class="text-gray-400 text-sm">Start Development:</p>
                     </div>
 
                     <div class="bg-gray-600 p-4 rounded-lg">
@@ -91,7 +91,8 @@
 
                     <div class="bg-gray-600 p-4 rounded-lg">
                         <h3 class="text-2xl">Court System</h3>
-                        <p>Flush out Court System and expand ticket and arrest reports.
+                        <p>Flush out Court System and expand ticket and arrest reports. Will also include points on
+                            Licenses.
                         </p>
                         <p class="text-gray-400 text-sm">Start Development: Will be moved up sooner if a community can help
                             with feature development.</p>
@@ -111,7 +112,16 @@
                         Completed
                     </h3>
 
-                    <p>No Tasks here yet.</p>
+                    <div class="bg-gray-600 p-4 rounded-lg">
+                        <h3 class="text-2xl">Settings Page Rework</h3>
+                        <p>Admin setting pages getting expanded and face lift to make it easier to find and change settings.
+                        </p>
+
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                            <div class="bg-green-600 h-2.5 rounded-full" style="width: 100%"></div>
+                        </div>
+                        <p class="text-gray-400 text-sm">Completed: 4/13/24; v1.2.2</p>
+                    </div>
 
                 </div>
 
