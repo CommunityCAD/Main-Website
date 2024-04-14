@@ -22,6 +22,7 @@ Route::view('/docs', 'docs.home')->name('docs.home');
 Route::view('/docs/getting_started/road_map', 'docs.getting_started.road_map')->name('docs.getting_started.road_map');
 Route::view('/docs/getting_started/known_issues', 'docs.getting_started.known_issues')->name('docs.getting_started.known_issues');
 
+Route::view('docs/install', 'docs.install')->name('docs.install');
 Route::view('docs/get-started', 'docs.get-started')->name('docs.get-started');
 Route::view('docs/discord-bot-integration', 'docs.discord-bot-integration')->name('docs.discord-bot-integration');
 Route::view('docs/settings-page', 'docs.settings-page')->name('docs.settings-page');
@@ -37,3 +38,4 @@ Route::view('docs/api/emergency/panic', 'docs.api.emergency.panic')->name('docs.
 Route::view('docs/api/emergency/unit_status', 'docs.api.emergency.unit_status')->name('docs.api.emergency.unit_status');
 Route::view('docs/api/emergency/unit_location', 'docs.api.emergency.unit_location')->name('docs.api.emergency.unit_location');
 Route::view('docs/api/emergency/get_calls', 'docs.api.emergency.get_calls')->name('docs.api.emergency.get_calls');
+Route::view('docs/api/emergency/create_call', 'docs.api.emergency.create_call')->name('docs.api.emergency.create_call');
