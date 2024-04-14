@@ -46,24 +46,23 @@
                     </p>
 
                     <h1 class="text-3xl font-bold tracking-tight">
-                        Get Calls
+                        Get Call Notes
                     </h1>
                 </header>
 
                 <p class="mt-2 text-xl text-slate-300">
-                    This endpoint allows you to retrieve all active calls and previously
-                    closed calls.
+                    This endpoint allows you to retrieve all call notes.
                 </p>
 
                 <div class="space-y-3" id="panic">
                     <h3 class="mt-16 text-2xl font-semibold tracking-tight">
-                        Get Calls
+                        Get Call Notes
                     </h3>
                     <p class="">
                         <span
                             class="inline-flex items-center rounded-md bg-gray-700 px-2 py-1 text-base font-medium text-green-500 ring-1 ring-inset ring-blue-700/10">POST</span>
                         <span
-                            class="inline-flex items-center rounded-md bg-gray-700 px-2 py-1 text-base font-medium text-gray-300 ring-1 ring-inset ring-blue-700/10">api/v1/emergency/get_calls</span>
+                            class="inline-flex items-center rounded-md bg-gray-700 px-2 py-1 text-base font-medium text-gray-300 ring-1 ring-inset ring-blue-700/10">api/v1/emergency/get_call_notes</span>
                     </p>
 
                     <h2 class="mt-16 text-lg font-semibold tracking-tight" id="request_body">Request Body</h2>
@@ -88,9 +87,9 @@
                         <tbody class="divide-y divide-gray-200">
                             <tr>
                                 <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
-                                    closed_call_limit</td>
+                                    call_id</td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">number</td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm">Number of closed calls to return.
+                                <td class="whitespace-nowrap px-3 py-4 text-sm">ID of the Call.
                                 </td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-red-500">Required</td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm"></td>
@@ -104,14 +103,14 @@
                         <span class="flex gap-4">
                             <pre class="flex-1">
 {
-    "closed_call_limit": 10
+    "call_id": 2400025
 }
                             </pre>
                         </span>
                     </code>
 
                     <h2 class="mt-16 text-lg font-semibold tracking-tight" id="example_responses">Responses</h2>
-                    <p>200 A successful call will be met with the active unit information.</p>
+                    <p>200 A successful call will be met with all the call notes attached to the call.</p>
 
                     <code
                         class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
@@ -134,12 +133,7 @@
     "created_at": "2024-04-03T00:14:14.000000Z",
     "updated_at": "2024-04-03T21:13:47.000000Z",
     "deleted_at": null,
-    "department_type": 1,
-    "call_notes":[
-        {
-            ...
-        }
-    ]
+    "department_type": 1
 }</pre>
                         </span>
                     </code>

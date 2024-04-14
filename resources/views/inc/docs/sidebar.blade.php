@@ -21,6 +21,12 @@
                 </h3>
 
                 <ul class="pl-3 mt-3 space-y-2" role="list">
+                    {{-- <li>
+                        <a class=" hover:text-black @if (request()->is('docs/install')) !text-black underline @endif"
+                            href="{{ route('docs.install') }}">
+                            Installation
+                        </a>
+                    </li> --}}
                     <li>
                         <a class="hover:text-black @if (request()->is('docs/get-started')) !text-black underline @endif"
                             href="{{ route('docs.get-started') }}">
@@ -127,8 +133,131 @@
                                 </a>
                             </li>
 
+                            <li class="ml-2">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/create_call')) !text-black underline @endif"
+                                    href="{{ route('docs.api.emergency.create_call') }}">
+                                    Create Call
+                                </a>
+                            </li>
+
+                            <li class="ml-2">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/create_call')) !text-black underline @endif"
+                                    href="{{ route('docs.api.emergency.create_call') }}">
+                                    Add Call Note
+                                </a>
+                            </li>
+
+                            <li class="ml-2">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/create_call')) !text-black underline @endif"
+                                    href="{{ route('docs.api.emergency.create_call') }}">
+                                    Edit Call
+                                </a>
+                            </li>
+
+                            <li class="ml-2">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/create_call')) !text-black underline @endif"
+                                    href="{{ route('docs.api.emergency.create_call') }}">
+                                    Attach Unit
+                                </a>
+                            </li>
+
+                            <li class="ml-2">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/create_call')) !text-black underline @endif"
+                                    href="{{ route('docs.api.emergency.create_call') }}">
+                                    Detach Unit
+                                </a>
+                            </li>
+
+                            <li class="ml-2">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/create_call')) !text-black underline @endif"
+                                    href="{{ route('docs.api.emergency.create_call') }}">
+                                    Close Call
+                                </a>
+                            </li>
+                            <li>
+                                <hr>
+                            </li>
+
+                            <li class="ml-2">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/create_call')) !text-black underline @endif"
+                                    href="{{ route('docs.api.emergency.create_call') }}">
+                                    Vehicle Lookup
+                                </a>
+                            </li>
+                            <li class="ml-2">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/create_call')) !text-black underline @endif"
+                                    href="{{ route('docs.api.emergency.create_call') }}">
+                                    Civilian Lookup
+                                </a>
+                            </li>
                         </ul>
                     </li>
+
+                    <li x-data="{ isOpen: @if (request()->is('docs/api/civilian/*')) true @else false @endif }">
+                        <button @click="isOpen = !isOpen" @keydown.escape="isOpen = false"
+                            class="hover:text-black flex items-center">
+                            Civilian
+                            <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="heroicon-ui"
+                                    d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <ul class="mt-2 py-1 space-y-2 z-20 border-l-2 border-black" x-show="isOpen">
+                            <li class="ml-2">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/panic')) !text-black underline @endif"
+                                    href="{{ route('docs.api.emergency.panic') }}">
+                                    Get Civilian
+                                </a>
+                            </li>
+
+                            <li class="ml-2">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/panic')) !text-black underline @endif"
+                                    href="{{ route('docs.api.emergency.panic') }}">
+                                    Set Civilian
+                                </a>
+                            </li>
+
+                            <li class="ml-2">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/unit_status')) !text-black underline @endif"
+                                    href="{{ route('docs.api.emergency.unit_status') }}">
+                                    Create Civilian
+                                </a>
+                            </li>
+
+                            <li class="ml-2">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/unit_location')) !text-black underline @endif"
+                                    href="{{ route('docs.api.emergency.unit_location') }}">
+                                    Edit Civilian
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li x-data="{ isOpen: @if (request()->is('docs/api/general/*')) true @else false @endif }">
+                        <button @click="isOpen = !isOpen" @keydown.escape="isOpen = false"
+                            class="hover:text-black flex items-center">
+                            General
+                            <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="heroicon-ui"
+                                    d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z">
+                                </path>
+                            </svg>
+                        </button>
+
+                        <ul class="mt-2 py-1 space-y-2 z-20 border-l-2 border-black" x-show="isOpen">
+                            <li class="ml-2">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/panic')) !text-black underline @endif"
+                                    href="{{ route('docs.api.emergency.panic') }}">
+                                    Get Penal Code
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
                     <li>
                         <a class=" hover:text-black @if (request()->is('docs/api/911-call')) !text-black underline @endif"
                             href="{{ route('docs.api.911-call') }}">

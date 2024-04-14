@@ -14,15 +14,3 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
-
-Route::post('/discord_notify', function (Request $request) {
-
-    dd($request->all());
-
-    $channel_id = $request->channel_id;
-    $title = $request->title;
-    $description = $request->description;
-    $color = $request->color;
-    $fields = $request->fields;
-    return DiscordNotification::send($channel_id, $title, $description, $color, $fields);
-});
