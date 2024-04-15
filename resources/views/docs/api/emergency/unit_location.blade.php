@@ -23,23 +23,6 @@
                     </div>
                 </div>
 
-                <div class="rounded-md bg-yellow-50 p-4 my-3">
-                    <div class="flex">
-                        <div class="flex-shrink-0">
-                            <svg aria-hidden="true" class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path clip-rule="evenodd"
-                                    d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z"
-                                    fill-rule="evenodd" />
-                            </svg>
-                        </div>
-                        <div class="ml-3">
-                            <div class="text-sm text-yellow-700">
-                                <p>This endpoint is not currently active.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <header class="">
                     <p class="text-base font-medium text-slate-300">
                         API Resources > Emergency
@@ -62,7 +45,7 @@
                         <span
                             class="inline-flex items-center rounded-md bg-gray-700 px-2 py-1 text-base font-medium text-green-500 ring-1 ring-inset ring-blue-700/10">POST</span>
                         <span
-                            class="inline-flex items-center rounded-md bg-gray-700 px-2 py-1 text-base font-medium text-gray-300 ring-1 ring-inset ring-blue-700/10">api/v1/emergency/unit_status</span>
+                            class="inline-flex items-center rounded-md bg-gray-700 px-2 py-1 text-base font-medium text-gray-300 ring-1 ring-inset ring-blue-700/10">api/v1/emergency/unit_location</span>
                     </p>
 
                     <h2 class="mt-16 text-lg font-semibold tracking-tight" id="request_body">Request Body</h2>
@@ -79,9 +62,6 @@
                                 <th class="px-3 py-3.5 text-left text-sm font-bold" scope="col">
                                     Default
                                 </th>
-                                <th class="px-3 py-3.5 text-left text-sm font-bold" scope="col">
-                                    Accepted Values
-                                </th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-gray-200">
@@ -92,7 +72,6 @@
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">Discord ID of the player.
                                 </td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-red-500">Required</td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm"></td>
                             </tr>
                             <tr>
                                 <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
@@ -101,12 +80,11 @@
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">Location of player.
                                 </td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-red-500">Required</td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm"></td>
                             </tr>
                         </tbody>
                     </table>
 
-                    <h2 class="mt-16 text-lg font-semibold tracking-tight" id="example_call">Example Call</h2>
+                    <h2 class="mt-16 text-lg font-semibold tracking-tight" id="example_call">Example Request Body</h2>
                     <code
                         class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
                         <span class="flex gap-4">
@@ -120,30 +98,16 @@
                     </code>
 
                     <h2 class="mt-16 text-lg font-semibold tracking-tight" id="example_responses">Responses</h2>
-                    <p>200 A successful call will be met with the active unit information.</p>
+                    <p>200 A successful call.</p>
 
                     <code
                         class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
                         <span class="flex gap-4">
                             <pre class="flex-1">
 {
-    "id": 82,
-    "user_id": 123456789123456789,
-    "user_department_id": 9,
-    "officer_id": 531807882,
-    "subdivision": null,
-    "group_callsign_id": null,
-    "description": "SIGNED IN: 19:14:14",
-    "location": "234 Route 68, Sandy Shores",
-    "status": "AVL",
-    "first_on_duty_at": null,
-    "off_duty_at": null,
-    "off_duty_type": null,
-    "is_panic": 1,
-    "created_at": "2024-04-03T00:14:14.000000Z",
-    "updated_at": "2024-04-03T21:13:47.000000Z",
-    "deleted_at": null,
-    "department_type": 1
+    "success": true,
+    "message": "Location updated.",
+    "data": []
 }
                             </pre>
                         </span>
@@ -155,7 +119,31 @@
                         <span class="flex gap-4">
                             <pre class="flex-1">
 {
-    "error": "No active unit found for the current player"
+    "success": false,
+    "message": "No active unit found for the given user.",
+    "data": []
+}
+                            </pre>
+                        </span>
+                    </code>
+
+                    <p>200 with validation errors.</p>
+                    <code
+                        class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
+                        <span class="flex gap-4">
+                            <pre class="flex-1">
+{
+    "success": false,
+    "message": "Validation errors",
+    "data": {
+        "user_id": [
+            "The user id field is required.",
+            "The user id must be a number."
+        ],
+        "location": [
+            "The is location field is required."
+        ]
+    }
 }
                             </pre>
                         </span>

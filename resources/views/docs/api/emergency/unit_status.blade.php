@@ -23,23 +23,6 @@
                     </div>
                 </div>
 
-                <div class="rounded-md bg-yellow-50 p-4 my-3">
-                    <div class="flex">
-                        <div class="flex-shrink-0">
-                            <svg aria-hidden="true" class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path clip-rule="evenodd"
-                                    d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z"
-                                    fill-rule="evenodd" />
-                            </svg>
-                        </div>
-                        <div class="ml-3">
-                            <div class="text-sm text-yellow-700">
-                                <p>This endpoint is not currently active.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <header class="">
                     <p class="text-base font-medium text-slate-300">
                         API Resources > Emergency
@@ -79,9 +62,6 @@
                                 <th class="px-3 py-3.5 text-left text-sm font-bold" scope="col">
                                     Default
                                 </th>
-                                <th class="px-3 py-3.5 text-left text-sm font-bold" scope="col">
-                                    Accepted Values
-                                </th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-gray-200">
@@ -92,23 +72,20 @@
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">Discord ID of the player.
                                 </td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-red-500">Required</td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm"></td>
                             </tr>
                             <tr>
                                 <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
                                     status</td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">string</td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm">New status.
+                                <td class="whitespace-nowrap px-3 py-4 text-sm">New status. <a class="underline"
+                                        href="#status_options">Accepted Status Options</a>
                                 </td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-red-500">Required</td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm">["AVL", "ENRUTE", "ONSCN", "BRK", "OFFDTY -
-                                    RPT"]
-                                </td>
                             </tr>
                         </tbody>
                     </table>
 
-                    <h2 class="mt-16 text-lg font-semibold tracking-tight" id="example_call">Example Call</h2>
+                    <h2 class="mt-16 text-lg font-semibold tracking-tight" id="example_call">Example Request Body</h2>
                     <code
                         class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
                         <span class="flex gap-4">
@@ -122,30 +99,16 @@
                     </code>
 
                     <h2 class="mt-16 text-lg font-semibold tracking-tight" id="example_responses">Responses</h2>
-                    <p>200 A successful call will be met with the active unit information.</p>
+                    <p>200 A successful call.</p>
 
                     <code
                         class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
                         <span class="flex gap-4">
                             <pre class="flex-1">
 {
-    "id": 82,
-    "user_id": 123456789123456789,
-    "user_department_id": 9,
-    "officer_id": 531807882,
-    "subdivision": null,
-    "group_callsign_id": null,
-    "description": "SIGNED IN: 19:14:14",
-    "location": null,
-    "status": "AVL",
-    "first_on_duty_at": null,
-    "off_duty_at": null,
-    "off_duty_type": null,
-    "is_panic": 1,
-    "created_at": "2024-04-03T00:14:14.000000Z",
-    "updated_at": "2024-04-03T21:13:47.000000Z",
-    "deleted_at": null,
-    "department_type": 1
+    "success": true,
+    "message": "Status updated.",
+    "data": []
 }
                             </pre>
                         </span>
@@ -157,25 +120,82 @@
                         <span class="flex gap-4">
                             <pre class="flex-1">
 {
-    "error": "No active unit found for the current player"
+    "success": false,
+    "message": "No active unit found for the given user.",
+    "data": []
 }
                             </pre>
                         </span>
                     </code>
 
-                    <p>200 with error message if the status was not accepted.</p>
+                    <p>200 with validation error messages.</p>
                     <code
                         class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
                         <span class="flex gap-4">
                             <pre class="flex-1">
 {
-    "error": "Status not available"
+    "success": false,
+    "message": "Validation errors",
+    "data": {
+        "user_id": [
+            "The user id field is required.",
+            "The user id field is required."
+        ],
+        "status": [
+            "The status field is required.",
+            "The selected status is invalid." // Not in given list below
+        ]
+    }
 }
                             </pre>
                         </span>
                     </code>
+
                 </div>
 
+                <div class="space-y-3" id="status_options">
+                    <h3 class="mt-16 text-2xl font-semibold tracking-tight">
+                        Status Options
+                    </h3>
+                    <p>ID is what the API expects as the status field.</p>
+                    <table class="min-w-full divide-y divide-gray-300 text-white">
+                        <thead>
+                            <tr>
+                                <th class="py-3.5 pl-4 pr-3 text-left text-sm font-bold sm:pl-0" scope="col">ID
+                                </th>
+                                <th class="px-3 py-3.5 text-left text-sm font-bold" scope="col">Name
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
+                                    AVL</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm">Available</td>
+                            </tr>
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
+                                    ENRUTE</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm">Enroute</td>
+                            </tr>
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
+                                    ONSCN</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm">On Scene</td>
+                            </tr>
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
+                                    BRK</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm">Break</td>
+                            </tr>
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
+                                    OFFDTY - RPT</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm">Off duty and need to fill out report.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <div class="space-y-3" id="support">
                     <h3 class="mt-16 text-2xl font-semibold tracking-tight">
                         Still have questions?

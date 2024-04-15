@@ -80,9 +80,6 @@
                                 <th class="px-3 py-3.5 text-left text-sm font-bold" scope="col">
                                     Default
                                 </th>
-                                <th class="px-3 py-3.5 text-left text-sm font-bold" scope="col">
-                                    Accepted Values
-                                </th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-gray-200">
@@ -93,12 +90,11 @@
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">Number of closed calls to return.
                                 </td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-red-500">Required</td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm"></td>
                             </tr>
                         </tbody>
                     </table>
 
-                    <h2 class="mt-16 text-lg font-semibold tracking-tight" id="example_call">Example Call</h2>
+                    <h2 class="mt-16 text-lg font-semibold tracking-tight" id="example_call">Example Request Body</h2>
                     <code
                         class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
                         <span class="flex gap-4">
@@ -111,62 +107,18 @@
                     </code>
 
                     <h2 class="mt-16 text-lg font-semibold tracking-tight" id="example_responses">Responses</h2>
-                    <p>200 A successful call will be met with the active unit information.</p>
+                    <p>200 A successful call will be met with all the active and previously closed calls.</p>
 
                     <code
                         class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
                         <span class="flex gap-4">
                             <pre class="flex-1">
 {
-    "id": 82,
-    "user_id": 123456789123456789,
-    "user_department_id": 9,
-    "officer_id": 531807882,
-    "subdivision": null,
-    "group_callsign_id": null,
-    "description": "SIGNED IN: 19:14:14",
-    "location": null,
-    "status": "AVL",
-    "first_on_duty_at": null,
-    "off_duty_at": null,
-    "off_duty_type": null,
-    "is_panic": 1,
-    "created_at": "2024-04-03T00:14:14.000000Z",
-    "updated_at": "2024-04-03T21:13:47.000000Z",
-    "deleted_at": null,
-    "department_type": 1,
-    "call_notes":[
-        {
-            ...
-        }
-    ]
+
 }</pre>
                         </span>
                     </code>
 
-                    <p>200 with error message if the unit was not found.</p>
-                    <code
-                        class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
-                        <span class="flex gap-4">
-                            <pre class="flex-1">
-{
-    "error": "No active unit found for the current player"
-}
-                            </pre>
-                        </span>
-                    </code>
-
-                    <p>200 with error message if the status was not accepted.</p>
-                    <code
-                        class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
-                        <span class="flex gap-4">
-                            <pre class="flex-1">
-{
-    "error": "Status not available"
-}
-                            </pre>
-                        </span>
-                    </code>
                 </div>
 
                 <div class="space-y-3" id="support">
