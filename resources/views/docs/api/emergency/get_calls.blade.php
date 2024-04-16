@@ -23,23 +23,6 @@
                     </div>
                 </div>
 
-                <div class="rounded-md bg-yellow-50 p-4 my-3">
-                    <div class="flex">
-                        <div class="flex-shrink-0">
-                            <svg aria-hidden="true" class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                <path clip-rule="evenodd"
-                                    d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z"
-                                    fill-rule="evenodd" />
-                            </svg>
-                        </div>
-                        <div class="ml-3">
-                            <div class="text-sm text-yellow-700">
-                                <p>This endpoint is not currently active.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <header class="">
                     <p class="text-base font-medium text-slate-300">
                         API Resources > Emergency
@@ -100,7 +83,7 @@
                         <span class="flex gap-4">
                             <pre class="flex-1">
 {
-    "closed_call_limit": 10
+    "closed_call_limit": 10 // 0 to only return active calls
 }
                             </pre>
                         </span>
@@ -114,8 +97,97 @@
                         <span class="flex gap-4">
                             <pre class="flex-1">
 {
-
+    "success": true,
+    "message": "",
+    "data": {
+        "open": [
+            {
+                "id": 2400017,
+                "nature": "TEST",
+                "nature_name": "TEST CALL",
+                "narrative": "This is the narrative",
+                "location": "123 Test AVE",
+                "city": "Sandy Shores",
+                "priority": 3,
+                "type": 1,
+                "status": "RCVD",
+                "status_name": "Call Open",
+                "source": "911 CALL",
+                "created_at": "04/05/2024 19:46:57",
+                "updated_at": "04/05/2024 19:46:57",
+                "call_log": [
+                        {
+                            "id": 206,
+                            "from": "Ariana Daugherty (1C-1)",
+                            "text": "Call Status Updated To RCVD",
+                            "created_at": "04/13/2024 12:14:17"
+                        },
+                        ...
+                ],
+                "call_civilians": [
+                        {
+                            "id": 16,
+                            "civilian_id": 122714196,
+                            "call_id": 2400014,
+                            "type": "RP",
+                            "created_at": "2024-03-06T04:19:12.000000Z",
+                            "updated_at": "2024-03-06T04:19:12.000000Z",
+                            "deleted_at": null,
+                            "civilian": null
+                        }
+                ],
+                "call_vehicles": [
+                        {
+                            "id": 8,
+                            "vehicle_id": 2,
+                            "call_id": 2400010,
+                            "type": "RP",
+                            "created_at": "2024-04-02T02:15:33.000000Z",
+                            "updated_at": "2024-04-02T02:15:33.000000Z",
+                            "deleted_at": null,
+                            "vehicle": {
+                                "id": 2,
+                                "plate": "abc123",
+                                "model": "Ford F150",
+                                "color": "Green",
+                                "registration_expire": "2024-02-06T06:00:00.000000Z",
+                                "civilian_id": 600613090,
+                                "vehicle_status": 2,
+                                "created_at": "2024-01-08T01:20:08.000000Z",
+                                "updated_at": "2024-01-08T01:20:08.000000Z",
+                                "deleted_at": null,
+                                "impound_ticket_id": null,
+                                "picture": null,
+                                "business_id": null
+                            }
+                        }
+                ]
+            },
+        ]
+        "closed": [
+            {...}
+        ]
+    }
 }</pre>
+                        </span>
+                    </code>
+
+                    <p>200 with validation errors.</p>
+                    <code
+                        class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
+                        <span class="flex gap-4">
+                            <pre class="flex-1">
+{
+    "success": false,
+    "message": "Validation errors",
+    "data": {
+        "closed_call_limit": [
+            "The closed call limit field is required.",
+            "The closed call limit must be a number."
+        ]
+    }
+}
+                            </pre>
                         </span>
                     </code>
 
