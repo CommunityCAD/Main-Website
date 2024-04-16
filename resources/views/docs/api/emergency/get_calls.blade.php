@@ -102,65 +102,87 @@
     "data": {
         "open": [
             {
-                "id": 2400017,
-                "nature": "TEST",
-                "nature_name": "TEST CALL",
-                "narrative": "This is the narrative",
-                "location": "123 Test AVE",
-                "city": "Sandy Shores",
-                "priority": 3,
-                "type": 1,
+                "id": 2400010,
+                "nature": "DOMESTIC",
+                "nature_name": "DOMESTIC DISTURBANCE VIOLENCE",
+                "narrative": "Voluptatem dicta eos",
+                "location": "Minus dolorum fuga",
+                "city": "Et quia omnis ducimu",
+                "priority": 1,
+                "type": 2,
                 "status": "RCVD",
                 "status_name": "Call Open",
                 "source": "911 CALL",
-                "created_at": "04/05/2024 19:46:57",
-                "updated_at": "04/05/2024 19:46:57",
+                "created_at": "02/09/2024 20:10:06",
+                "updated_at": "04/01/2024 21:16:52",
                 "call_log": [
-                        {
-                            "id": 206,
-                            "from": "Ariana Daugherty (1C-1)",
-                            "text": "Call Status Updated To RCVD",
-                            "created_at": "04/13/2024 12:14:17"
-                        },
-                        ...
+                    {
+                        "id": 195,
+                        "from": "Guy Cruz (1C-31)",
+                        "text": "Officer  has been assigned.",
+                        "created_at": "02/09/2024 20:25:03"
+                    },
+                    ...
                 ],
                 "call_civilians": [
-                        {
-                            "id": 16,
-                            "civilian_id": 122714196,
-                            "call_id": 2400014,
-                            "type": "RP",
-                            "created_at": "2024-03-06T04:19:12.000000Z",
-                            "updated_at": "2024-03-06T04:19:12.000000Z",
-                            "deleted_at": null,
-                            "civilian": null
+                    {
+                        "id": 17,
+                        "civilian_id": 279684039,
+                        "type": "VICTIM",
+                        "civilian": {
+                            "id": 279684039,
+                            "user_id": 188790560658685954,
+                            "first_name": "TestTest",
+                            "last_name": "test",
+                            "full_name": "TestTest test",
+                            "picture": null,
+                            "date_of_birth": "01/08/2024",
+                            "gender": "Male",
+                            "race": "Asian",
+                            "postal": 122334,
+                            "street": "Test",
+                            "city": "Sandy",
+                            "full_address": "122334 Test Sandy",
+                            "occupation": null,
+                            "height": "54",
+                            "weight": "105",
+                            "status": 1,
+                            "status_name": "Alive",
+                            "active_persona": 0,
+                            "created_at": "01/22/2024 13:16:50",
+                            "updated_at": "01/22/2024 13:20:15",
+                            "is_violent": 0,
+                            "is_weapon": 0,
+                            "is_ill": 0,
+                            "is_swat": 0,
+                            "is_ciu": 0,
+                            "is_warrant": 0
                         }
+                    }
+                    ...
                 ],
                 "call_vehicles": [
-                        {
-                            "id": 8,
-                            "vehicle_id": 2,
-                            "call_id": 2400010,
-                            "type": "RP",
-                            "created_at": "2024-04-02T02:15:33.000000Z",
-                            "updated_at": "2024-04-02T02:15:33.000000Z",
+                    {
+                        "id": 8,
+                        "vehicle_id": 2,
+                        "type": "RP",
+                        "vehicle": {
+                            "id": 2,
+                            "plate": "abc123",
+                            "model": "Ford F150",
+                            "color": "Green",
+                            "registration_expire": "2024-02-06T06:00:00.000000Z",
+                            "civilian_id": 600613090,
+                            "vehicle_status": 2,
+                            "created_at": "2024-01-08T01:20:08.000000Z",
+                            "updated_at": "2024-01-08T01:20:08.000000Z",
                             "deleted_at": null,
-                            "vehicle": {
-                                "id": 2,
-                                "plate": "abc123",
-                                "model": "Ford F150",
-                                "color": "Green",
-                                "registration_expire": "2024-02-06T06:00:00.000000Z",
-                                "civilian_id": 600613090,
-                                "vehicle_status": 2,
-                                "created_at": "2024-01-08T01:20:08.000000Z",
-                                "updated_at": "2024-01-08T01:20:08.000000Z",
-                                "deleted_at": null,
-                                "impound_ticket_id": null,
-                                "picture": null,
-                                "business_id": null
-                            }
+                            "impound_ticket_id": null,
+                            "picture": null,
+                            "business_id": null
                         }
+                    }
+                    ...
                 ]
             },
         ]
@@ -191,6 +213,20 @@
                         </span>
                     </code>
 
+                </div>
+
+                <div class="space-y-3" id="support">
+                    <h3 class="mt-16 text-2xl font-semibold tracking-tight">
+                        Related Information
+                    </h3>
+                    <p class="">
+                        You can find more information about the other responses for the following
+                    <ul>
+                        <li>Vehcile</li>
+                        <li>Civilian</li>
+                        <li>Call Log</li>
+                    </ul>
+                    </p>
                 </div>
 
                 <div class="space-y-3" id="support">
