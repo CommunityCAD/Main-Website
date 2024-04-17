@@ -193,20 +193,20 @@
                             </li>
 
                             <li class="ml-2">
-                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/create_call')) !text-black underline @endif"
-                                    href="/docs/api/emergency/panic">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/vehicle_lookup')) !text-black underline @endif"
+                                    href="/docs/api/emergency/vehicle_lookup">
                                     Vehicle Lookup
                                 </a>
                             </li>
                             <li class="ml-2">
-                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/create_call')) !text-black underline @endif"
-                                    href="/docs/api/emergency/panic">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/civilian_lookup')) !text-black underline @endif"
+                                    href="/docs/api/emergency/civilian_lookup">
                                     Civilian Lookup
                                 </a>
                             </li>
                         </ul>
                     </li>
-
+                    {{--
                     <li x-data="{ isOpen: @if (request()->is('docs/api/civilian/*')) true @else false @endif }">
                         <button @click="isOpen = !isOpen" @keydown.escape="isOpen = false"
                             class="hover:text-black flex items-center">
@@ -272,16 +272,16 @@
                         </ul>
                     </li>
                 </ul>
-            </li>
-            <li>
-                <h3 class="font-semibold tracking-tight text-slate-900">
-                    Resources
-                </h3>
+            </li> --}}
+                    <li>
+                        <h3 class="font-semibold tracking-tight text-slate-900">
+                            Resources
+                        </h3>
 
-                <ul class="pl-3 mt-3 space-y-2" role="list">
+                        <ul class="pl-3 mt-3 space-y-2" role="list">
 
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-        </ul>
     </nav>
 </div>
