@@ -83,16 +83,7 @@
                                         List of all status codes options.
                                     </a>
                                 </td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm text-yellow-500">Optional</td>
-                            </tr>
-
-                            <tr>
-                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
-                                    priority</td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm">number</td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm">Prioity number 1-5.
-                                </td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm text-yellow-500">Optional</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-red-500">Required</td>
                             </tr>
                         </tbody>
                     </table>

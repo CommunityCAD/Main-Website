@@ -166,6 +166,7 @@
 "location": "Location", // Optional
 "city": "City", // Optional
 "nature": "OTHER", // Optional
+"status": "HLD", // Optional
 "type": "1", // Optional
 "priority": "3", // Optional
 "source": "911 Call" // Optional
@@ -193,7 +194,7 @@
             "city": "City",
             "priority": 3,
             "type": 1,
-            "status": "RCVD",
+            "status": "HLD",
             "status_name": "Call Open",
             "source": "911 Call",
             "created_at": "04/16/2024 16:18:30",

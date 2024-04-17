@@ -114,6 +114,18 @@
 
                             <tr>
                                 <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
+                                    status</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm">string</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm">Status of Call.
+                                    <a class="underline" href="#status_codes">
+                                        List of status codes options.
+                                    </a>
+                                </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-yellow-500">RCVD</td>
+                            </tr>
+
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
                                     nature</td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">string</td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">Type of Call.
@@ -145,6 +157,7 @@
 "location": "Location",
 "city": "City",
 "nature": "OTHER", // Optional
+"status": "RCVD", // Optional
 "type": "1", // Optional
 "priority": "3", // Optional
 "source": "911 Call" // Optional
@@ -336,6 +349,20 @@
                             <li><span class='font-bold text-lg'>WATERCRA</span> - WATERCRAFT IN DISTRESS</li>
                             <li><span class='font-bold text-lg'>WELFCHK</span> - WELFARE CHECK</li>
                             <li><span class='font-bold text-lg'>TEST</span> - TEST CALL</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                    <div class="space-y-3" id="status_codes">
+                        <h3 class="mt-16 text-2xl font-semibold tracking-tight">
+                            Status Codes
+                        </h3>
+                        <p class="">
+                        <ul class="list-inside list-disc">
+                            <li><span class='font-bold text-lg'>RCVD</span> - Call Open</li>
+                            <li><span class='font-bold text-lg'>HLD</span> - Call On Hold</li>
+                            <li><span class='font-bold text-lg'>ENRT</span> - Units Enroute</li>
+                            <li><span class='font-bold text-lg'>ARRVD</span> - Units Arrived Onscene</li>
                         </ul>
                         </p>
                     </div>
