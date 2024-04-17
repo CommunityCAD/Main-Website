@@ -93,8 +93,7 @@
 {
     "user_id": 123456789123456789,
     "status": "AVL"
-}
-                            </pre>
+}</pre>
                         </span>
                     </code>
 
@@ -109,8 +108,7 @@
     "success": true,
     "message": "Status updated.",
     "data": []
-}
-                            </pre>
+}</pre>
                         </span>
                     </code>
 
@@ -123,8 +121,7 @@
     "success": false,
     "message": "No active unit found for the given user.",
     "data": []
-}
-                            </pre>
+}</pre>
                         </span>
                     </code>
 
@@ -146,8 +143,7 @@
             "The selected status is invalid." // Not in given list below
         ]
     }
-}
-                            </pre>
+}</pre>
                         </span>
                     </code>
 

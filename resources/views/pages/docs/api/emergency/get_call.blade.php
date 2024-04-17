@@ -83,8 +83,7 @@
                             <pre class="flex-1">
 {
     "call_id": 123456789
-}
-                            </pre>
+}</pre>
                         </span>
                     </code>
 
@@ -197,8 +196,7 @@
     "success": false,
     "message": "Call not found.",
     "data": []
-}
-                            </pre>
+}</pre>
                         </span>
                     </code>
 

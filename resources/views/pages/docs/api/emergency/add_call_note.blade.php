@@ -29,23 +29,23 @@
                     </p>
 
                     <h1 class="text-3xl font-bold tracking-tight">
-                        Get Call
+                        Add Call Note
                     </h1>
                 </header>
 
                 <p class="mt-2 text-xl text-slate-300">
-                    This endpoint allows you to retrieve a call.
+                    This endpoint allows you to add a note to a call.
                 </p>
 
                 <div class="space-y-3" id="panic">
                     <h3 class="mt-16 text-2xl font-semibold tracking-tight">
-                        Get Call
+                        Add Call Note
                     </h3>
                     <p class="">
                         <span
                             class="inline-flex items-center rounded-md bg-gray-700 px-2 py-1 text-base font-medium text-green-500 ring-1 ring-inset ring-blue-700/10">POST</span>
                         <span
-                            class="inline-flex items-center rounded-md bg-gray-700 px-2 py-1 text-base font-medium text-gray-300 ring-1 ring-inset ring-blue-700/10">api/v1/emergency/get_call</span>
+                            class="inline-flex items-center rounded-md bg-gray-700 px-2 py-1 text-base font-medium text-gray-300 ring-1 ring-inset ring-blue-700/10">api/v1/emergency/add_call_note</span>
                     </p>
 
                     <h2 class="mt-16 text-lg font-semibold tracking-tight" id="request_body">Request Body</h2>
@@ -103,8 +103,7 @@
     "call_id": 123456789,
     "note": "Call Note",
     "from": "Ron S (1C-2)"
-}
-                            </pre>
+}</pre>
                         </span>
                     </code>
 

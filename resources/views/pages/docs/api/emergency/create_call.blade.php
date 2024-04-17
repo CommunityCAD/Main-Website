@@ -34,7 +34,7 @@
                 </header>
 
                 <p class="mt-2 text-xl text-slate-300">
-                    This endpoint allows you to create 911 calls.
+                    This endpoint allows you to create calls.
                 </p>
 
                 <div class="space-y-3" id="create_call">
@@ -153,7 +153,7 @@
                     </code>
 
                     <h2 class="mt-16 text-lg font-semibold tracking-tight" id="example_responses">Responses</h2>
-                    <p>200 A successful call will be met with the call information.</p>
+                    <p>200 A successful call.</p>
 
                     <code
                         class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">

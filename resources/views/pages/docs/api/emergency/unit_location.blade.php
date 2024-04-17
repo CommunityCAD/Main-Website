@@ -92,8 +92,7 @@
 {
     "user_id": 123456789123456789,
     "location": "234 Route 68, Sandy Shores"
-}
-                            </pre>
+}</pre>
                         </span>
                     </code>
 
@@ -108,8 +107,7 @@
     "success": true,
     "message": "Location updated.",
     "data": []
-}
-                            </pre>
+}</pre>
                         </span>
                     </code>
 
@@ -122,8 +120,7 @@
     "success": false,
     "message": "No active unit found for the given user.",
     "data": []
-}
-                            </pre>
+}</pre>
                         </span>
                     </code>
 
@@ -144,8 +141,7 @@
             "The is location field is required."
         ]
     }
-}
-                            </pre>
+}</pre>
                         </span>
                     </code>
                 </div>

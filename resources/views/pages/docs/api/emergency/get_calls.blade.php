@@ -84,13 +84,12 @@
                             <pre class="flex-1">
 {
     "closed_call_limit": 10 // 0 to only return active calls
-}
-                            </pre>
+}</pre>
                         </span>
                     </code>
 
                     <h2 class="mt-16 text-lg font-semibold tracking-tight" id="example_responses">Responses</h2>
-                    <p>200 A successful call will be met with all the active and previously closed calls.</p>
+                    <p>200 A successful call.</p>
 
                     <code
                         class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
@@ -208,8 +207,7 @@
             "The closed call limit must be a number."
         ]
     }
-}
-                            </pre>
+}</pre>
                         </span>
                     </code>
 

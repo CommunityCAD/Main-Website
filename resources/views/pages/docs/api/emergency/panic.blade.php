@@ -102,8 +102,7 @@
     "user_id": 123456789123456789,
     "is_panic": true,
     "location": "234 Route 68, Sandy Shores"
-}
-                            </pre>
+}</pre>
                         </span>
 
                     </code>
@@ -133,8 +132,7 @@
     "success": false,
     "message": "No active unit found for the given user.",
     "data": []
-}
-                            </pre>
+}</pre>
                         </span>
                     </code>
 
@@ -156,8 +154,7 @@
             "The is panic field must be true or false."
         ]
     }
-}
-                            </pre>
+}</pre>
                         </span>
                     </code>
                 </div>
