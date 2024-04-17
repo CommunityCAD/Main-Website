@@ -180,7 +180,7 @@
             </article>
 
             <dl class="flex pt-6 mt-6 border-t border-slate-200">
-                <div class="mr-auto text-left">
+                {{-- <div class="mr-auto text-left">
                     <dt class="text-sm font-normal tracking-tight">
                         Previous
                     </dt>
@@ -190,7 +190,7 @@
                             Settings Page
                         </a>
                     </dd>
-                </div>
+                </div> --}}
 
                 {{-- <div class="ml-auto text-right">
                     <dt class="text-sm font-normal tracking-tight">

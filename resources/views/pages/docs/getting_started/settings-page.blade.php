@@ -322,7 +322,7 @@
 
             </article>
 
-            <dl class="flex pt-6 mt-6 border-t border-slate-200">
+            {{-- <dl class="flex pt-6 mt-6 border-t border-slate-200">
                 <div class="mr-auto text-left">
                     <dt class="text-sm font-normal tracking-tight">
                         Previous
@@ -347,7 +347,7 @@
                         </a>
                     </dd>
                 </div>
-            </dl>
+            </dl> --}}
         </div>
     </main>
 @endsection
