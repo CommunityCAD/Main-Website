@@ -29,23 +29,23 @@
                     </p>
 
                     <h1 class="text-3xl font-bold tracking-tight">
-                        Add Call Note
+                        Attach Unit
                     </h1>
                 </header>
 
                 <p class="mt-2 text-xl text-slate-300">
-                    This endpoint allows you to add a note to a call.
+                    This endpoint allows you to attach an unit from a call.
                 </p>
 
                 <div class="space-y-3" id="panic">
                     <h3 class="mt-16 text-2xl font-semibold tracking-tight">
-                        Add Call Note
+                        Attach Unit
                     </h3>
                     <p class="">
                         <span
                             class="inline-flex items-center rounded-md bg-gray-700 px-2 py-1 text-base font-medium text-green-500 ring-1 ring-inset ring-blue-700/10">POST</span>
                         <span
-                            class="inline-flex items-center rounded-md bg-gray-700 px-2 py-1 text-base font-medium text-gray-300 ring-1 ring-inset ring-blue-700/10">api/v1/emergency/add_call_note</span>
+                            class="inline-flex items-center rounded-md bg-gray-700 px-2 py-1 text-base font-medium text-gray-300 ring-1 ring-inset ring-blue-700/10">api/v1/emergency/attach_unit</span>
                     </p>
 
                     <h2 class="mt-16 text-lg font-semibold tracking-tight" id="request_body">Request Body</h2>
@@ -82,15 +82,6 @@
                                 </td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-red-500">Required</td>
                             </tr>
-
-                            <tr>
-                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
-                                    note</td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm">string</td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm">Note to be saved.
-                                </td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm text-red-500">Required</td>
-                            </tr>
                         </tbody>
                     </table>
 
@@ -101,8 +92,7 @@
                             <pre class="flex-1">
 {
     "call_id": 123456789,
-    "user_id": 123456789123456789,
-    "note": "Call Note",
+    "user_id": 123456789123456789
 }</pre>
                         </span>
                     </code>
@@ -116,7 +106,7 @@
                             <pre class="flex-1">
 {
     "success": true,
-    "message": "Note added.",
+    "message": "Unit attached to call.",
     "data": []
 }</pre>
                         </span>
@@ -139,9 +129,6 @@
             "The user id field is required.",
             "The user id must be a number."
         ],
-        "note": [
-            "The note field is required."
-        ],
     }
 }</pre>
                         </span>
@@ -160,7 +147,7 @@
                         </span>
                     </code>
 
-                    <p>200 with active unit found.</p>
+                    <p>200 with no active unit found.</p>
                     <code
                         class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
                         <span class="flex gap-4">
@@ -168,6 +155,19 @@
 {
     "success": false,
     "message": "No active unit found for the given user.",
+    "data": []
+}</pre>
+                        </span>
+                    </code>
+
+                    <p>200 with unit already attached.</p>
+                    <code
+                        class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
+                        <span class="flex gap-4">
+                            <pre class="flex-1">
+{
+    "success": false,
+    "message": "Unit is already attached to call.",
     "data": []
 }</pre>
                         </span>

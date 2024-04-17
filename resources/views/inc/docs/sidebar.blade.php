@@ -123,6 +123,12 @@
                                     Unit Location
                                 </a>
                             </li>
+                            <li class="ml-2">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/get_active_unit')) !text-black underline @endif"
+                                    href="/docs/api/emergency/get_active_unit">
+                                    Get Active Unit
+                                </a>
+                            </li>
                             <li>
                                 <hr>
                             </li>
@@ -155,22 +161,22 @@
                             </li>
 
                             <li class="ml-2">
-                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/create_call')) !text-black underline @endif"
-                                    href="/docs/api/emergency/panic">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/edit_call')) !text-black underline @endif"
+                                    href="/docs/api/emergency/edit_call">
                                     Edit Call
                                 </a>
                             </li>
 
                             <li class="ml-2">
-                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/create_call')) !text-black underline @endif"
-                                    href="/docs/api/emergency/panic">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/attach_unit')) !text-black underline @endif"
+                                    href="/docs/api/emergency/attach_unit">
                                     Attach Unit
                                 </a>
                             </li>
 
                             <li class="ml-2">
-                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/create_call')) !text-black underline @endif"
-                                    href="/docs/api/emergency/panic">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/detach_unit')) !text-black underline @endif"
+                                    href="/docs/api/emergency/detach_unit">
                                     Detach Unit
                                 </a>
                             </li>
