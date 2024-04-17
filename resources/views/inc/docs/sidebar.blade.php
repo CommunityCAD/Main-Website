@@ -134,6 +134,13 @@
                             </li>
 
                             <li class="ml-2">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/get_call')) !text-black underline @endif"
+                                    href="{{ route('docs.api.emergency.get_call') }}">
+                                    Get Call
+                                </a>
+                            </li>
+
+                            <li class="ml-2">
                                 <a class=" hover:text-black @if (request()->is('docs/api/emergency/create_call')) !text-black underline @endif"
                                     href="{{ route('docs.api.emergency.create_call') }}">
                                     Create Call
@@ -141,8 +148,8 @@
                             </li>
 
                             <li class="ml-2">
-                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/create_call')) !text-black underline @endif"
-                                    href="{{ route('docs.api.emergency.create_call') }}">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/add_call_note')) !text-black underline @endif"
+                                    href="{{ route('docs.api.emergency.add_call_note') }}">
                                     Add Call Note
                                 </a>
                             </li>

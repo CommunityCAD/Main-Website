@@ -29,24 +29,23 @@
                     </p>
 
                     <h1 class="text-3xl font-bold tracking-tight">
-                        Get Calls
+                        Get Call
                     </h1>
                 </header>
 
                 <p class="mt-2 text-xl text-slate-300">
-                    This endpoint allows you to retrieve all active calls and previously
-                    closed calls.
+                    This endpoint allows you to retrieve a call.
                 </p>
 
                 <div class="space-y-3" id="panic">
                     <h3 class="mt-16 text-2xl font-semibold tracking-tight">
-                        Get Calls
+                        Get Call
                     </h3>
                     <p class="">
                         <span
                             class="inline-flex items-center rounded-md bg-gray-700 px-2 py-1 text-base font-medium text-green-500 ring-1 ring-inset ring-blue-700/10">POST</span>
                         <span
-                            class="inline-flex items-center rounded-md bg-gray-700 px-2 py-1 text-base font-medium text-gray-300 ring-1 ring-inset ring-blue-700/10">api/v1/emergency/get_calls</span>
+                            class="inline-flex items-center rounded-md bg-gray-700 px-2 py-1 text-base font-medium text-gray-300 ring-1 ring-inset ring-blue-700/10">api/v1/emergency/get_call</span>
                     </p>
 
                     <h2 class="mt-16 text-lg font-semibold tracking-tight" id="request_body">Request Body</h2>
@@ -68,7 +67,7 @@
                         <tbody class="divide-y divide-gray-200">
                             <tr>
                                 <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
-                                    closed_call_limit</td>
+                                    call_id</td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">number</td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">Number of closed calls to return.
                                 </td>
@@ -83,14 +82,14 @@
                         <span class="flex gap-4">
                             <pre class="flex-1">
 {
-    "closed_call_limit": 10 // 0 to only return active calls
+    "call_id": 123456789
 }
                             </pre>
                         </span>
                     </code>
 
                     <h2 class="mt-16 text-lg font-semibold tracking-tight" id="example_responses">Responses</h2>
-                    <p>200 A successful call will be met with all the active and previously closed calls.</p>
+                    <p>200 A successful call.</p>
 
                     <code
                         class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
@@ -99,97 +98,92 @@
 {
     "success": true,
     "message": "",
-    "data": {
-        "open": [
-            {
-                "id": 2400010,
-                "nature": "DOMESTIC",
-                "nature_name": "DOMESTIC DISTURBANCE VIOLENCE",
-                "narrative": "Voluptatem dicta eos",
-                "location": "Minus dolorum fuga",
-                "city": "Et quia omnis ducimu",
-                "priority": 1,
-                "type": 2,
-                "status": "RCVD",
-                "status_name": "Call Open",
-                "source": "911 CALL",
-                "created_at": "02/09/2024 20:10:06",
-                "updated_at": "04/01/2024 21:16:52",
-                "call_log": [
-                    {
-                        "id": 195,
-                        "from": "Guy Cruz (1C-31)",
-                        "text": "Officer  has been assigned.",
-                        "created_at": "02/09/2024 20:25:03"
-                    },
-                    ...
-                ],
-                "call_civilians": [
-                    {
-                        "id": 17,
-                        "civilian_id": 279684039,
-                        "type": "VICTIM",
-                        "civilian": {
-                            "id": 279684039,
-                            "user_id": 188790560658685954,
-                            "first_name": "TestTest",
-                            "last_name": "test",
-                            "full_name": "TestTest test",
-                            "picture": null,
-                            "date_of_birth": "01/08/2024",
-                            "gender": "Male",
-                            "race": "Asian",
-                            "postal": 122334,
-                            "street": "Test",
-                            "city": "Sandy",
-                            "full_address": "122334 Test Sandy",
-                            "occupation": null,
-                            "height": "54",
-                            "weight": "105",
-                            "status": 1,
-                            "status_name": "Alive",
-                            "active_persona": 0,
-                            "created_at": "01/22/2024 13:16:50",
-                            "updated_at": "01/22/2024 13:20:15",
-                            "is_violent": 0,
-                            "is_weapon": 0,
-                            "is_ill": 0,
-                            "is_swat": 0,
-                            "is_ciu": 0,
-                            "is_warrant": 0
-                        }
+    "data": [
+        {
+            "id": 2400010,
+            "nature": "DOMESTIC",
+            "nature_name": "DOMESTIC DISTURBANCE VIOLENCE",
+            "narrative": "Voluptatem dicta eos",
+            "location": "Minus dolorum fuga",
+            "city": "Et quia omnis ducimu",
+            "priority": 1,
+            "type": 2,
+            "status": "RCVD",
+            "status_name": "Call Open",
+            "source": "911 CALL",
+            "created_at": "02/09/2024 20:10:06",
+            "updated_at": "04/01/2024 21:16:52",
+            "call_log": [
+                {
+                    "id": 195,
+                    "from": "Guy Cruz (1C-31)",
+                    "text": "Officer  has been assigned.",
+                    "created_at": "02/09/2024 20:25:03"
+                },
+                ...
+            ],
+            "call_civilians": [
+                {
+                    "id": 17,
+                    "civilian_id": 279684039,
+                    "type": "VICTIM",
+                    "civilian": {
+                        "id": 279684039,
+                        "user_id": 188790560658685954,
+                        "first_name": "TestTest",
+                        "last_name": "test",
+                        "full_name": "TestTest test",
+                        "picture": null,
+                        "date_of_birth": "01/08/2024",
+                        "gender": "Male",
+                        "race": "Asian",
+                        "postal": 122334,
+                        "street": "Test",
+                        "city": "Sandy",
+                        "full_address": "122334 Test Sandy",
+                        "occupation": null,
+                        "height": "54",
+                        "weight": "105",
+                        "status": 1,
+                        "status_name": "Alive",
+                        "active_persona": 0,
+                        "created_at": "01/22/2024 13:16:50",
+                        "updated_at": "01/22/2024 13:20:15",
+                        "is_violent": 0,
+                        "is_weapon": 0,
+                        "is_ill": 0,
+                        "is_swat": 0,
+                        "is_ciu": 0,
+                        "is_warrant": 0
                     }
-                    ...
-                ],
-                "call_vehicles": [
-                    {
-                        "id": 8,
-                        "vehicle_id": 2,
-                        "type": "RP",
-                        "vehicle": {
-                            "id": 2,
-                            "plate": "abc123",
-                            "model": "Ford F150",
-                            "color": "Green",
-                            "registration_expire": "2024-02-06T06:00:00.000000Z",
-                            "civilian_id": 600613090,
-                            "vehicle_status": 2,
-                            "created_at": "2024-01-08T01:20:08.000000Z",
-                            "updated_at": "2024-01-08T01:20:08.000000Z",
-                            "deleted_at": null,
-                            "impound_ticket_id": null,
-                            "picture": null,
-                            "business_id": null
-                        }
+                }
+                ...
+            ],
+            "call_vehicles": [
+                {
+                    "id": 8,
+                    "vehicle_id": 2,
+                    "type": "RP",
+                    "vehicle": {
+                        "id": 2,
+                        "plate": "abc123",
+                        "model": "Ford F150",
+                        "color": "Green",
+                        "registration_expire": "2024-02-06T06:00:00.000000Z",
+                        "civilian_id": 600613090,
+                        "vehicle_status": 2,
+                        "created_at": "2024-01-08T01:20:08.000000Z",
+                        "updated_at": "2024-01-08T01:20:08.000000Z",
+                        "deleted_at": null,
+                        "impound_ticket_id": null,
+                        "picture": null,
+                        "business_id": null
                     }
-                    ...
-                ]
-            },
-        ]
-        "closed": [
-            {...}
-        ]
-    }
+                }
+                ...
+            ]
+        },
+    ]
 }</pre>
                         </span>
                     </code>
@@ -201,13 +195,8 @@
                             <pre class="flex-1">
 {
     "success": false,
-    "message": "Validation errors",
-    "data": {
-        "closed_call_limit": [
-            "The closed call limit field is required.",
-            "The closed call limit must be a number."
-        ]
-    }
+    "message": "Call not found.",
+    "data": []
 }
                             </pre>
                         </span>

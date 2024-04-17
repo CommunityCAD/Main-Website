@@ -38,4 +38,6 @@ Route::view('docs/api/emergency/panic', 'docs.api.emergency.panic')->name('docs.
 Route::view('docs/api/emergency/unit_status', 'docs.api.emergency.unit_status')->name('docs.api.emergency.unit_status');
 Route::view('docs/api/emergency/unit_location', 'docs.api.emergency.unit_location')->name('docs.api.emergency.unit_location');
 Route::view('docs/api/emergency/get_calls', 'docs.api.emergency.get_calls')->name('docs.api.emergency.get_calls');
+Route::view('docs/api/emergency/get_call', 'docs.api.emergency.get_call')->name('docs.api.emergency.get_call');
 Route::view('docs/api/emergency/create_call', 'docs.api.emergency.create_call')->name('docs.api.emergency.create_call');
+Route::view('docs/api/emergency/add_call_note', 'docs.api.emergency.add_call_note')->name('docs.api.emergency.add_call_note');
