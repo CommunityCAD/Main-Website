@@ -134,6 +134,18 @@
 
                             <tr>
                                 <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
+                                    status</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm">string</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm">Status of Call.
+                                    <a class="underline" href="#status_codes">
+                                        List of call status codes options.
+                                    </a>
+                                </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-yellow-500">Optional</td>
+                            </tr>
+
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
                                     priority</td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">number</td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">Prioity number 1-5.
@@ -207,9 +219,6 @@
         "nature": [
             "The nature must only contain letters."
         ],
-        "status": [
-            "The selected status is invalid."
-        ],
         "priority": [
             "The priority must be a number.",
             "The selected priority is invalid."
@@ -217,13 +226,16 @@
         "type": [
             "The type must be a number.",
             "The selected type is invalid."
+        ],
+        "status": [
+            "The status must only contain letters."
         ]
     }
 }</pre>
                         </span>
                     </code>
 
-                    <p>200 with validation errors.</p>
+                    <p>200 with call not found.</p>
                     <code
                         class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
                         <span class="flex gap-4">
@@ -231,6 +243,32 @@
 {
     "success": false,
     "message": "Call not found.",
+    "data": []
+}</pre>
+                        </span>
+                    </code>
+
+                    <p>200 with status code not found.</p>
+                    <code
+                        class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
+                        <span class="flex gap-4">
+                            <pre class="flex-1">
+{
+    "success": false,
+    "message": "Status code not found.",
+    "data": []
+}</pre>
+                        </span>
+                    </code>
+
+                    <p>200 with nature code not found.</p>
+                    <code
+                        class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
+                        <span class="flex gap-4">
+                            <pre class="flex-1">
+{
+    "success": false,
+    "message": "Nature code not found.",
     "data": []
 }</pre>
                         </span>
@@ -338,6 +376,38 @@
                             <li><span class='font-bold text-lg'>WATERCRA</span> - WATERCRAFT IN DISTRESS</li>
                             <li><span class='font-bold text-lg'>WELFCHK</span> - WELFARE CHECK</li>
                             <li><span class='font-bold text-lg'>TEST</span> - TEST CALL</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                    <div class="space-y-3" id="status_codes">
+                        <div class="rounded-md bg-yellow-50 p-4 my-3">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <svg aria-hidden="true" class="h-5 w-5 text-yellow-400" fill="currentColor"
+                                        viewBox="0 0 20 20">
+                                        <path clip-rule="evenodd"
+                                            d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z"
+                                            fill-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="ml-3">
+                                    <div class="text-sm text-yellow-700">
+                                        <p>To close the call use the Close Call endpoint.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="mt-16 text-2xl font-semibold tracking-tight">
+                            Status Codes
+                        </h3>
+                        <p class="">
+                        <ul class="list-inside list-disc">
+                            <li><span class='font-bold text-lg'>RCVD</span> - Call Open</li>
+                            <li><span class='font-bold text-lg'>HLD</span> - Call On Hold</li>
+                            <li><span class='font-bold text-lg'>ENRT</span> - Units Enroute</li>
+                            <li><span class='font-bold text-lg'>ARRVD</span> - Units Arrived Onscene</li>
                         </ul>
                         </p>
                     </div>

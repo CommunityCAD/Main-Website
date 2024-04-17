@@ -182,11 +182,12 @@
                             </li>
 
                             <li class="ml-2">
-                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/create_call')) !text-black underline @endif"
-                                    href="/docs/api/emergency/panic">
+                                <a class=" hover:text-black @if (request()->is('docs/api/emergency/close_call')) !text-black underline @endif"
+                                    href="/docs/api/emergency/close_call">
                                     Close Call
                                 </a>
                             </li>
+
                             <li>
                                 <hr>
                             </li>
