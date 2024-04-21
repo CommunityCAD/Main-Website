@@ -55,7 +55,7 @@
                     <li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#features">Features</a></li>
                     <li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#gallery">Gallery</a></li>
                     <li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#reviews">Reviews</a></li>
-                    <li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="{{ route('docs.home') }}">Docs</a></li>
+                    <li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="/docs">Docs</a></li>
                 </ul>
             </div>
             <div class="order-2 md:order-3">

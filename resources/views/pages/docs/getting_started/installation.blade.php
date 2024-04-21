@@ -12,26 +12,24 @@
                     </p>
 
                     <h1 class="text-3xl font-bold tracking-tight">
-                        Welcome to the CommunityCAD Docs
+                        Installation
                     </h1>
                 </header>
 
                 <p class="mt-2 text-xl text-slate-300">
-
+                    This guide will walk you through how to set up your CommunityCAD.
                 </p>
 
                 <div class="space-y-3" id="overview">
                     <h3 class="mt-16 text-2xl font-semibold tracking-tight">
-                        Overview
+                        Installation with Docker
                     </h3>
 
-                    <p class="">
-                        This is still a work in progress but I will continue to add more resources here as I get time to
-                        help communities with the best CAD system on the market!
+                    <p>Right now they only way we support hosting CommunityCAD is through Docker. You can find the repo and
+                        instructions here:
+                        <a class="underline"
+                            href="https://github.com/CommunityCAD/docker-community-cad">https://github.com/CommunityCAD/docker-community-cad</a>
                     </p>
-
-                    <p>These are just rough drafts and may contain grammar or spelling errors. Please bear with me while I
-                        continue to work on this.</p>
                 </div>
 
                 <div class="space-y-3" id="questions">

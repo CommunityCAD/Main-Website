@@ -54,22 +54,6 @@
 
                 <div class="space-y-3" id="overview">
                     <h3 class="mt-16 text-2xl font-semibold tracking-tight">
-                        No way to kick dispatch offline
-                        <span
-                            class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-700 ring-1 ring-inset ring-yellow-700/10">Minor</span>
-                    </h3>
-
-                    <p class="">
-                        Identified issue that if the Active Dispatcher doesn't go offline there isn't a way to boot them
-                        offline early so another dispatcher can take over.
-                    </p>
-
-                    <p>🔨 Don't stay on duty when you are going offline.</p>
-                    <p>⌛ No ETA given at this point.</p>
-                </div>
-
-                <div class="space-y-3" id="overview">
-                    <h3 class="mt-16 text-2xl font-semibold tracking-tight">
                         Inaccurate number counts on portal page
                         <span
                             class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-700/10">Non-impacting</span>
@@ -85,22 +69,13 @@
                 <div class="mt-16 ">
                     <hr>
                 </div>
-                <div class="space-y-3" id="overview">
+                <div class="space-y-2" id="overview">
                     <h3 class="mt-16 text-2xl font-semibold tracking-tight">
                         URLs in setting pages
                         <span
                             class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-700/10">Fixed
                             as of v1.2.2</span>
                     </h3>
-
-                    <p class="line-through">
-                        Identified bug that if the url is too long it will cause errors. This impacts settings pages and
-                        department logos.
-                    </p>
-
-                    <p class="line-through">🔨 If using a Discord link delete everything after including the "?" in the URL.
-                    </p>
-                    <p class="line-through">⌛ No ETA given at this point.</p>
                     <p>Fixed as of v1.2.2</p>
                 </div>
 
@@ -111,16 +86,17 @@
                             class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-700/10">Fixed
                             as of v1.2.2</span>
                     </h3>
-
-                    <p class="line-through">
-                        Identified issue that the auto kick off of CAD doesn't work as intended. Kicks users off when they
-                        log into the CAD agian not every 4 hours like intended.
-                    </p>
-
-                    <p class="line-through">🔨 Not a breaking issue. Dispatchers can force units off duty with the "Hard off
-                        duty" status.</p>
-                    <p class="line-through">⌛ No ETA given at this point.</p>
                     <p>Fixed as of v1.2.2</p>
+                </div>
+
+                <div class="space-y-3" id="overview">
+                    <h3 class="mt-16 text-2xl font-semibold tracking-tight">
+                        No way to kick dispatch offline
+                        <span
+                            class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-700/10">Fixed
+                            as of v1.3.2</span>
+                    </h3>
+                    <p>Fixed as of v1.3.2</p>
                 </div>
 
                 <div class="space-y-3" id="questions">

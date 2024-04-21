@@ -31,7 +31,7 @@
                             suggest and endpoint go to #api-endpoint-suggestion in Discord.</p>
 
                         <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 10%"></div>
+                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 50%"></div>
                         </div>
                         <p class="text-gray-400 text-sm">Expected Launch: Continous</p>
                     </div>
@@ -52,13 +52,6 @@
                     <h3 class="mt-16 text-2xl font-semibold tracking-tight">
                         Near Future
                     </h3>
-
-                    <div class="bg-gray-600 p-4 rounded-lg">
-                        <h3 class="text-2xl">BOLO Systems for MDT</h3>
-                        <p>Add Bolos into the MDT.
-                        </p>
-                        <p class="text-gray-400 text-sm">Start Development: 4/12/24</p>
-                    </div>
 
                     <div class="bg-gray-600 p-4 rounded-lg">
                         <h3 class="text-2xl">In CAD Message System</h3>
@@ -101,14 +94,6 @@
 
                 <div class="space-y-3" id="overview">
                     <h3 class="mt-16 text-2xl font-semibold tracking-tight">
-                        Will be a moment
-                    </h3>
-
-                    <p>No Tasks here yet.</p>
-                </div>
-
-                <div class="space-y-3" id="overview">
-                    <h3 class="mt-16 text-2xl font-semibold tracking-tight">
                         Completed
                     </h3>
 
@@ -121,6 +106,16 @@
                             <div class="bg-green-600 h-2.5 rounded-full" style="width: 100%"></div>
                         </div>
                         <p class="text-gray-400 text-sm">Completed: 4/13/24; v1.2.2</p>
+                    </div>
+
+                    <div class="bg-gray-600 p-4 rounded-lg">
+                        <h3 class="text-2xl">BOLO Systems for MDT</h3>
+                        <p>Add Bolos into the MDT.
+                        </p>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                            <div class="bg-green-600 h-2.5 rounded-full" style="width: 100%"></div>
+                        </div>
+                        <p class="text-gray-400 text-sm">Completed: 4/19/24; v1.3.2</p>
                     </div>
 
                 </div>

@@ -17,5 +17,3 @@ Route::view('/', 'home2')->name('home');
 Route::view('/pricing', 'pricing')->name('pricing');
 
 Route::view('posts/just-ship-v1', 'posts.just-ship-v1')->name('posts.just-ship-v1');
-
-// Route::view('docs/api/get-started', 'docs.api.get-started')->name('docs.api.get-started');

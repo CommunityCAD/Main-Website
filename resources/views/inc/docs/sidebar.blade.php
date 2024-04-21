@@ -21,19 +21,12 @@
                 </h3>
 
                 <ul class="pl-3 mt-3 space-y-2" role="list">
-                    {{-- <li>
-                        <a class=" hover:text-black @if (request()->is('docs/install')) !text-black underline @endif"
-                            href="{{ route('docs.install') }}">
+                    <li>
+                        <a class=" hover:text-black @if (request()->is('docs/getting_started/installation')) !text-black underline @endif"
+                            href="/docs/getting_started/installation">
                             Installation
                         </a>
-                    </li> --}}
-                    <li>
-                        <a class="hover:text-black @if (request()->is('docs/getting_started/home')) !text-black underline @endif"
-                            href="/docs/getting_started/home">
-                            Get Started
-                        </a>
                     </li>
-
                     <li>
                         <a class=" hover:text-black @if (request()->is('docs/getting_started/settings-page')) !text-black underline @endif"
                             href="/docs/getting_started/settings-page">
@@ -41,12 +34,12 @@
                         </a>
                     </li>
 
-                    <li>
+                    {{-- <li>
                         <a class=" hover:text-black @if (request()->is('docs/getting_started/discord-bot-integration')) !text-black underline @endif"
                             href="/docs/getting_started/discord-bot-integration">
                             Discord Logging Integration
                         </a>
-                    </li>
+                    </li> --}}
 
                     <li>
                         <a class=" hover:text-black @if (request()->is('docs/getting_started/road_map')) !text-black underline @endif"
