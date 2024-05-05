@@ -79,13 +79,14 @@
                         liking. Civilian levels will have its own documentation at a later date.</p>
                 </div>
 
-                <div class="space-y-3" id="overview">
+                <div class="space-y-3" id="set_up_discord_bot">
 
                     <h3 class="mt-16 text-2xl font-semibold tracking-tight">
                         Set up our Discord Bot
                     </h3>
                     <x-yellow-alert>This bot is only for our hosted plan. If you are self hosting you have to set up your
-                        own bot.</x-yellow-alert>
+                        own bot. <a class="text-link" href="/docs/settings/discord_bot">More
+                            information</a></x-yellow-alert>
                     <p class="">
                         Community CAD is proud to announce that we have started integrating Discord into the CAD system!
                         Right now we have the following options to be logged:
@@ -193,9 +194,8 @@
                     </dt>
 
                     <dd class="mt-1">
-                        <a class="text-base font-semibold text-slate-200 hover:underline"
-                            href="/docs/settings/settings_page">
-                            Settings Page
+                        <a class="text-base font-semibold text-slate-200 hover:underline" href="/docs/road_map">
+                            Road Map
                         </a>
                     </dd>
                 </div>

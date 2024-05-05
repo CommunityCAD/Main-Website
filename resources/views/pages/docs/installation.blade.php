@@ -20,7 +20,7 @@
                     running.
                 </p>
 
-                <div class="space-y-3" id="overview">
+                <div class="space-y-3" id="installation">
                     <h3 class="mt-16 text-2xl font-semibold tracking-tight">
                         Installation
                     </h3>
@@ -33,14 +33,14 @@
                             <a class="text-link"
                                 href="https://github.com/communitycad/communitycad">CommunityCAD/CommunityCAD</a>
                         </li>
-                        <li>PHP - Github -
+                        <li>Docker - Github -
                             <a class="text-link"
                                 href="https://github.com/communitycad/docker-community-cad">CommunityCAD/docker-community-cad</a>
                         </li>
                     </ul>
                 </div>
 
-                <div class="space-y-3" id="overview">
+                <div class="space-y-3" id="discord_set_up">
                     <h3 class="mt-16 text-2xl font-semibold tracking-tight">
                         Discord Set Up
                     </h3>
@@ -52,7 +52,7 @@
                     </p>
                 </div>
 
-                <div class="space-y-3" id="overview">
+                <div class="space-y-3" id="steam_set_up">
                     <h3 class="mt-16 text-2xl font-semibold tracking-tight">
                         Steam Set up
                     </h3>
@@ -91,8 +91,8 @@
                     </dt>
 
                     <dd class="mt-1">
-                        <a class="text-base font-semibold text-slate-200 hover:underline" href="/docs/installation">
-                            Installation
+                        <a class="text-base font-semibold text-slate-200 hover:underline" href="/docs/hosted_plan">
+                            Hosted Plan
                         </a>
                     </dd>
                 </div>

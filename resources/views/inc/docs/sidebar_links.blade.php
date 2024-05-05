@@ -38,6 +38,13 @@
                 </a>
             </li>
 
+            <li class="ml-6 relative px-4 py-2">
+                <a class="flex items-center @if (request()->is('docs/road_map')) !text-purple-500 @endif"
+                    href="/docs/road_map">
+                    <span class="">Road Map</span>
+                </a>
+            </li>
+
             <li class="relative px-3 py-2 flex items-center mt-4">
                 <svg class="w-4 h-4" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
@@ -61,6 +68,13 @@
                 <a class="flex items-center @if (request()->is('docs/settings/discord_bot')) !text-purple-500 @endif"
                     href="/docs/settings/discord_bot">
                     <span class="">Discord Bot</span>
+                </a>
+            </li>
+
+            <li class="ml-6 relative px-4 py-2">
+                <a class="flex items-center @if (request()->is('docs/settings/fivem_scripts')) !text-purple-500 @endif"
+                    href="/docs/settings/fivem_scripts">
+                    <span class="">FiveM Scripts</span>
                 </a>
             </li>
 

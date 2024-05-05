@@ -95,17 +95,18 @@
                     </dd>
                 </div>
 
-                {{-- <div class="ml-auto text-right">
+                <div class="ml-auto text-right">
                     <dt class="text-sm font-normal tracking-tight text-slate-500">
                         Next
                     </dt>
 
                     <dd class="mt-1">
-                        <a class="text-base font-semibold text-slate-200 hover:underline" href="/docs/discord_integration">
-                            Discord Integration
+                        <a class="text-base font-semibold text-slate-200 hover:underline"
+                            href="/docs/settings/fivem_scripts">
+                            FiveM Scripts
                         </a>
                     </dd>
-                </div> --}}
+                </div>
             </dl>
         </div>
     </main>
