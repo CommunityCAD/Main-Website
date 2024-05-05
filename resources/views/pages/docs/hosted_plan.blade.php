@@ -34,7 +34,7 @@
                         Configure your system
                     </h3>
                     <x-blue-alert><span class="font-bold">Notice:</span> It is a good idea to complete all set up steps
-                        before inviting your server to join.</x-blue-alert>
+                        before inviting your members to join.</x-blue-alert>
 
                     <p class="">
                         Once you get the @everyone ping in your deticated support channel your system is up and ready to go.
