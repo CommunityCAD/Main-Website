@@ -17,6 +17,7 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
+    'main_discord_link' => 'https://discord.com/invite/Sqt2BzUM4F',
 
     /*
     |--------------------------------------------------------------------------

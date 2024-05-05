@@ -2,28 +2,24 @@
 
 @section('content')
     <main class="relative flex justify-center mx-auto max-w-8xl sm:px-2 lg:px-8 xl:px-12">
-
-        @include('inc.docs.sidebar')
-        <div class="flex-auto max-w-3xl min-w-0 px-4 py-10 mx-auto lg:pr-0 lg:pl-8 xl:px-16 text-white">
+        <div class="flex-auto max-w-8xl min-w-0 px-4 py-10 mx-auto lg:pr-0 lg:pl-8 xl:px-16 text-white">
             <article class="">
                 <header class="">
                     <p class="text-base font-medium text-slate-300">
-                        Getting started
+                        Settings & Integration
                     </p>
 
                     <h1 class="text-3xl font-bold tracking-tight">
-                        Settings Page
+                        Setting Pages
                     </h1>
                 </header>
 
                 <p class="mt-2 text-xl text-slate-300">
-                    How to configure your CAD.
+
                 </p>
 
-                {{-- <div class="mt-4 rounded-lg ">
-                    <img alt="Discord Integration" class="mx-auto"
-                        src="{{ asset('images/docs/discord-integration-example.png') }}">
-                </div> --}}
+                <x-red-alert>This page is out of date. The new <span class="text-red-600 font-bold">Admin > CAD
+                        Settings</span> pages have help text. This page will get an update in the near future.</x-red-alert>
 
                 <div class="space-y-3" id="overview">
                     <h3 class="mt-16 text-2xl font-semibold tracking-tight">
@@ -70,25 +66,6 @@
                     <p class="">
                         Takes a link for your community Logo.
                     </p>
-
-                    <div class="rounded-md bg-yellow-50 p-4 mt-3">
-                        <div class="flex">
-                            <div class="flex-shrink-0">
-                                <svg aria-hidden="true" class="h-5 w-5 text-yellow-400" fill="currentColor"
-                                    viewBox="0 0 20 20">
-                                    <path clip-rule="evenodd"
-                                        d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z"
-                                        fill-rule="evenodd" />
-                                </svg>
-                            </div>
-                            <div class="ml-3">
-                                <div class="text-sm text-yellow-700">
-                                    <p>If you are using a link from Discord you may have to remove everything after the "?"
-                                        in the URL for it to work.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="space-y-3" id="community_name">
@@ -172,37 +149,6 @@
                     <p class="">
                         If you have a postal map image you can put the link here. It is a link on multiple pages for members
                         to reference to get correct postals.
-                    </p>
-
-                    <div class="rounded-md bg-yellow-50 p-4 mt-3">
-                        <div class="flex">
-                            <div class="flex-shrink-0">
-                                <svg aria-hidden="true" class="h-5 w-5 text-yellow-400" fill="currentColor"
-                                    viewBox="0 0 20 20">
-                                    <path clip-rule="evenodd"
-                                        d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z"
-                                        fill-rule="evenodd" />
-                                </svg>
-                            </div>
-                            <div class="ml-3">
-                                <div class="text-sm text-yellow-700">
-                                    <p>If you are using a link from Discord you may have to remove everything after the "?"
-                                        in the URL for it to work.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="space-y-3" id="force_discord_link">
-                    <h3 class="mt-16 text-2xl font-semibold tracking-tight">
-                        Force Discord Link
-                        <span
-                            class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Boolean</span>
-                    </h3>
-
-                    <p class="text-red-500">
-                        This is a legacy setting that no longer does anything. Will be removed soon.
                     </p>
                 </div>
 
@@ -307,47 +253,36 @@
                     <p>If none of these values are entered the default of First Last will be used.</p>
                 </div>
 
-                <div class="space-y-3" id="questions">
-
-                    <h3 class="mt-16 text-2xl font-semibold tracking-tight">
-                        Still have questions?
-                    </h3>
-
-                    <p class="">
-                        Still have questions? <a class="underline hover:no-underline" href="https://discord.gg/tmZWX7q2yZ"
-                            target="_BLANK">Talk
-                            to support</a>.
-                    </p>
-                </div>
+                @include('inc.docs.support')
 
             </article>
 
-            {{-- <dl class="flex pt-6 mt-6 border-t border-slate-200">
+            <dl class="flex pt-6 mt-6 border-t border-slate-200">
                 <div class="mr-auto text-left">
-                    <dt class="text-sm font-normal tracking-tight">
+                    <dt class="text-sm font-normal tracking-tight text-slate-500">
                         Previous
                     </dt>
 
                     <dd class="mt-1">
-                        <a class="text-base font-semibold hover:underline" href="{{ route('docs.get-started') }}">
-                            Get Started
+                        <a class="text-base font-semibold text-slate-200 hover:underline" href="/docs/hosted_plan">
+                            Hosted Plan
                         </a>
                     </dd>
                 </div>
 
                 <div class="ml-auto text-right">
-                    <dt class="text-sm font-normal tracking-tight">
+                    <dt class="text-sm font-normal tracking-tight text-slate-500">
                         Next
                     </dt>
 
                     <dd class="mt-1">
-                        <a class="text-base font-semibold hover:underline"
-                            href="{{ route('docs.discord-bot-integration') }}">
-                            Discord Bot Integration
+                        <a class="text-base font-semibold text-slate-200 hover:underline"
+                            href="/docs/settings/discord_bot">
+                            Discord Bot
                         </a>
                     </dd>
                 </div>
-            </dl> --}}
+            </dl>
         </div>
     </main>
 @endsection

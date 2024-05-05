@@ -29,3 +29,7 @@
     border-radius: 8px;
     background-color: #363636;
 }
+
+.text-link {
+    @apply text-base font-semibold text-blue-400 hover:underline;
+}
