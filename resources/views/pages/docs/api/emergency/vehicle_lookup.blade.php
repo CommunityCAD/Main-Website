@@ -109,7 +109,10 @@
             "updated_at": "01/07/2024 19:08:20",
             "impound_ticket_id": null,
             "picture": null,
-            "business_id": null
+            "business_id": null,
+            "civilian" : {
+                ...
+            }
         }
     ]
 }</pre>
