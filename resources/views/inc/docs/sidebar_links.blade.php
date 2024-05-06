@@ -97,7 +97,7 @@
 
             <li class="ml-6 relative px-4 py-2" x-data="{ isOpen: @if (request()->is('docs/api/emergency/*')) true @else false @endif }">
                 <button @click="isOpen = !isOpen" @keydown.escape="isOpen = false"
-                    class="hover:text-black flex items-center @if (request()->is('docs')) !text-purple-500 @endif">
+                    class="flex items-center @if (request()->is('docs/api/emergency/*')) !text-purple-500 @endif">
                     Emergency
                     <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -107,29 +107,29 @@
                     </svg>
                 </button>
 
-                <ul class="mt-2 py-1 space-y-2 z-20 border-l-2 border-black" x-show="isOpen">
+                <ul class="mt-2 py-1 space-y-2 z-20 border-l-2 border-purple-500" x-show="isOpen">
                     <li class="ml-2">
-                        <a class=" hover:text-black @if (request()->is('docs/api/emergency/panic')) !text-black underline @endif"
+                        <a class="flex items-center @if (request()->is('docs/api/emergency/panic')) !text-purple-500 @endif"
                             href="/docs/api/emergency/panic">
                             Panic
                         </a>
                     </li>
 
                     <li class="ml-2">
-                        <a class=" hover:text-black @if (request()->is('docs/api/emergency/unit_status')) !text-black underline @endif"
+                        <a class="flex items-center @if (request()->is('docs/api/emergency/unit_status')) !text-purple-500 @endif"
                             href="/docs/api/emergency/unit_status">
                             Unit Status
                         </a>
                     </li>
 
                     <li class="ml-2">
-                        <a class=" hover:text-black @if (request()->is('docs/api/emergency/unit_location')) !text-black underline @endif"
+                        <a class="flex items-center @if (request()->is('docs/api/emergency/unit_location')) !text-purple-500 @endif"
                             href="/docs/api/emergency/unit_location">
                             Unit Location
                         </a>
                     </li>
                     <li class="ml-2">
-                        <a class=" hover:text-black @if (request()->is('docs/api/emergency/get_active_unit')) !text-black underline @endif"
+                        <a class="flex items-center @if (request()->is('docs/api/emergency/get_active_unit')) !text-purple-500 @endif"
                             href="/docs/api/emergency/get_active_unit">
                             Get Active Unit
                         </a>
@@ -138,56 +138,56 @@
                         <hr>
                     </li>
                     <li class="ml-2">
-                        <a class=" hover:text-black @if (request()->is('docs/api/emergency/get_calls')) !text-black underline @endif"
+                        <a class="flex items-center @if (request()->is('docs/api/emergency/get_calls')) !text-purple-500 @endif"
                             href="/docs/api/emergency/get_calls">
                             Get Calls
                         </a>
                     </li>
 
                     <li class="ml-2">
-                        <a class=" hover:text-black @if (request()->is('docs/api/emergency/get_call')) !text-black underline @endif"
+                        <a class="flex items-center @if (request()->is('docs/api/emergency/get_call')) !text-purple-500 @endif"
                             href="/docs/api/emergency/get_call">
                             Get Call
                         </a>
                     </li>
 
                     <li class="ml-2">
-                        <a class=" hover:text-black @if (request()->is('docs/api/emergency/create_call')) !text-black underline @endif"
+                        <a class="flex items-center @if (request()->is('docs/api/emergency/create_call')) !text-purple-500 @endif"
                             href="/docs/api/emergency/create_call">
                             Create Call
                         </a>
                     </li>
 
                     <li class="ml-2">
-                        <a class=" hover:text-black @if (request()->is('docs/api/emergency/add_call_note')) !text-black underline @endif"
+                        <a class="flex items-center @if (request()->is('docs/api/emergency/add_call_note')) !text-purple-500 @endif"
                             href="/docs/api/emergency/add_call_note">
                             Add Call Note
                         </a>
                     </li>
 
                     <li class="ml-2">
-                        <a class=" hover:text-black @if (request()->is('docs/api/emergency/edit_call')) !text-black underline @endif"
+                        <a class="flex items-center @if (request()->is('docs/api/emergency/edit_call')) !text-purple-500 @endif"
                             href="/docs/api/emergency/edit_call">
                             Edit Call
                         </a>
                     </li>
 
                     <li class="ml-2">
-                        <a class=" hover:text-black @if (request()->is('docs/api/emergency/attach_unit')) !text-black underline @endif"
+                        <a class="flex items-center @if (request()->is('docs/api/emergency/attach_unit')) !text-purple-500 @endif"
                             href="/docs/api/emergency/attach_unit">
                             Attach Unit
                         </a>
                     </li>
 
                     <li class="ml-2">
-                        <a class=" hover:text-black @if (request()->is('docs/api/emergency/detach_unit')) !text-black underline @endif"
+                        <a class="flex items-center @if (request()->is('docs/api/emergency/detach_unit')) !text-purple-500 @endif"
                             href="/docs/api/emergency/detach_unit">
                             Detach Unit
                         </a>
                     </li>
 
                     <li class="ml-2">
-                        <a class=" hover:text-black @if (request()->is('docs/api/emergency/close_call')) !text-black underline @endif"
+                        <a class="flex items-center @if (request()->is('docs/api/emergency/close_call')) !text-purple-500 @endif"
                             href="/docs/api/emergency/close_call">
                             Close Call
                         </a>
@@ -198,13 +198,13 @@
                     </li>
 
                     <li class="ml-2">
-                        <a class=" hover:text-black @if (request()->is('docs/api/emergency/vehicle_lookup')) !text-black underline @endif"
+                        <a class="flex items-center @if (request()->is('docs/api/emergency/vehicle_lookup')) !text-purple-500 @endif"
                             href="/docs/api/emergency/vehicle_lookup">
                             Vehicle Lookup
                         </a>
                     </li>
                     <li class="ml-2">
-                        <a class=" hover:text-black @if (request()->is('docs/api/emergency/civilian_lookup')) !text-black underline @endif"
+                        <a class="flex items-center @if (request()->is('docs/api/emergency/civilian_lookup')) !text-purple-500 @endif"
                             href="/docs/api/emergency/civilian_lookup">
                             Civilian Lookup
                         </a>
@@ -212,9 +212,9 @@
                 </ul>
             </li>
 
-            <li class="relative px-6 py-3" x-data="{ isOpen: @if (request()->is('docs/api/civilian/*')) true @else false @endif }">
+            <li class="ml-6 relative px-4 py-2" x-data="{ isOpen: @if (request()->is('docs/api/civilian/*')) true @else false @endif }">
                 <button @click="isOpen = !isOpen" @keydown.escape="isOpen = false"
-                    class="hover:text-black flex items-center @if (request()->is('docs')) !text-purple-500 @endif">
+                    class="flex items-center @if (request()->is('docs/api/civilian/*')) !text-purple-500 @endif">
                     Civilian
                     <svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -224,36 +224,36 @@
                     </svg>
                 </button>
 
-                <ul class="mt-2 py-1 space-y-2 z-20 border-l-2 border-black" x-show="isOpen">
+                <ul class="mt-2 py-1 space-y-2 z-20 border-l-2 border-purple-500" x-show="isOpen">
                     <li class="ml-2">
-                        <a class=" hover:text-black @if (request()->is('docs/api/emergency/panic')) !text-black underline @endif"
+                        <a class="flex items-center @if (request()->is('docs/api/emergency/civilian_lookup')) !text-purple-500 @endif"
                             href="/docs/api/emergency/panic">
                             Set Civilian
                         </a>
                     </li>
 
                     <li class="ml-2">
-                        <a class=" hover:text-black @if (request()->is('docs/api/emergency/unit_status')) !text-black underline @endif"
+                        <a class="flex items-center @if (request()->is('docs/api/emergency/civilian_lookup')) !text-purple-500 @endif"
                             href="/docs/api/emergency/unit_status">
                             Get Civilians
                         </a>
                     </li>
 
                     <li class="ml-2">
-                        <a class=" hover:text-black @if (request()->is('docs/api/emergency/unit_status')) !text-black underline @endif"
+                        <a class="flex items-center @if (request()->is('docs/api/emergency/civilian_lookup')) !text-purple-500 @endif"
                             href="/docs/api/emergency/unit_status">
                             Get Civilian
                         </a>
                     </li>
 
                     <li class="ml-2">
-                        <a class=" hover:text-black @if (request()->is('docs/api/emergency/unit_location')) !text-black underline @endif"
+                        <a class="flex items-center @if (request()->is('docs/api/emergency/civilian_lookup')) !text-purple-500 @endif"
                             href="/docs/api/emergency/unit_location">
                             New Civilian
                         </a>
                     </li>
                     <li class="ml-2">
-                        <a class=" hover:text-black @if (request()->is('docs/api/emergency/get_active_unit')) !text-black underline @endif"
+                        <a class="flex items-center @if (request()->is('docs/api/emergency/civilian_lookup')) !text-purple-500 @endif"
                             href="/docs/api/emergency/get_active_unit">
                             Edit Civilian
                         </a>
@@ -262,7 +262,7 @@
                         <hr>
                     </li>
                     <li class="ml-2">
-                        <a class=" hover:text-black @if (request()->is('docs/api/emergency/get_calls')) !text-black underline @endif"
+                        <a class="flex items-center @if (request()->is('docs/api/emergency/civilian_lookup')) !text-purple-500 @endif"
                             href="/docs/api/emergency/get_calls">
                             Register Vehicle
                         </a>

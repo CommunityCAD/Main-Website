@@ -1198,6 +1198,10 @@ video {
 .border-slate-400\/40 {
   border-color: rgb(148 163 184 / 0.4);
 }
+.border-purple-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(168 85 247 / var(--tw-border-opacity));
+}
 .bg-\[\#101825\] {
   --tw-bg-opacity: 1;
   background-color: rgb(16 24 37 / var(--tw-bg-opacity));

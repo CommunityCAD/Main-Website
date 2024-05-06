@@ -2,9 +2,7 @@
 
 @section('content')
     <main class="relative flex justify-center mx-auto max-w-8xl sm:px-2 lg:px-8 xl:px-12">
-
-        @include('inc.docs.sidebar')
-        <div class="flex-auto max-w-5xl min-w-0 px-4 py-10 mx-auto lg:pr-0 lg:pl-8 xl:px-16 text-white">
+        <div class="flex-auto max-w-8xl min-w-0 px-4 py-10 mx-auto lg:pr-0 lg:pl-8 xl:px-16 text-white">
             <article class="">
                 <div class="rounded-md bg-red-50 p-4 my-3">
                     <div class="flex">
@@ -174,16 +172,7 @@
                     </code>
                 </div>
 
-                <div class="space-y-3" id="support">
-                    <h3 class="mt-16 text-2xl font-semibold tracking-tight">
-                        Still have questions?
-                    </h3>
-                    <p class="">
-                        Still have questions? <a class="underline hover:no-underline" href="https://discord.gg/tmZWX7q2yZ"
-                            target="_BLANK">Talk
-                            to support</a>.
-                    </p>
-                </div>
+                @include('inc.docs.support')
 
             </article>
 
