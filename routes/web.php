@@ -14,3 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'home2')->name('home');
+
+Route::get('discord', function () {
+    return redirect(config('app.main_discord_link'));
+});
