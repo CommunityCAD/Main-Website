@@ -226,35 +226,42 @@
 
                 <ul class="mt-2 py-1 space-y-2 z-20 border-l-2 border-purple-500" x-show="isOpen">
                     <li class="ml-2">
-                        <a class="flex items-center @if (request()->is('docs/api/emergency/civilian_lookup')) !text-purple-500 @endif"
-                            href="/docs/api/emergency/panic">
-                            Set Civilian
+                        <a class="flex items-center @if (request()->is('docs/api/civilian/set_active_civilian')) !text-purple-500 @endif"
+                            href="/docs/api/civilian/set_active_civilian">
+                            Set Active Civilian
                         </a>
                     </li>
 
                     <li class="ml-2">
-                        <a class="flex items-center @if (request()->is('docs/api/emergency/civilian_lookup')) !text-purple-500 @endif"
-                            href="/docs/api/emergency/unit_status">
+                        <a class="flex items-center @if (request()->is('docs/api/civilian/get_active_civilian')) !text-purple-500 @endif"
+                            href="/docs/api/civilian/get_active_civilian">
+                            Get Active Civilian
+                        </a>
+                    </li>
+
+                    <li class="ml-2">
+                        <a class="flex items-center @if (request()->is('docs/api/civilian/get_civilians')) !text-purple-500 @endif"
+                            href="/docs/api/civilian/get_civilians">
                             Get Civilians
                         </a>
                     </li>
 
                     <li class="ml-2">
-                        <a class="flex items-center @if (request()->is('docs/api/emergency/civilian_lookup')) !text-purple-500 @endif"
-                            href="/docs/api/emergency/unit_status">
+                        <a class="flex items-center @if (request()->is('docs/api/civilian/get_civilian')) !text-purple-500 @endif"
+                            href="/docs/api/civilian/get_civilian">
                             Get Civilian
                         </a>
                     </li>
 
                     <li class="ml-2">
-                        <a class="flex items-center @if (request()->is('docs/api/emergency/civilian_lookup')) !text-purple-500 @endif"
-                            href="/docs/api/emergency/unit_location">
-                            New Civilian
+                        <a class="flex items-center @if (request()->is('docs/api/civilian/create_civilian')) !text-purple-500 @endif"
+                            href="/docs/api/civilian/create_civilian">
+                            Create Civilian
                         </a>
                     </li>
                     <li class="ml-2">
-                        <a class="flex items-center @if (request()->is('docs/api/emergency/civilian_lookup')) !text-purple-500 @endif"
-                            href="/docs/api/emergency/get_active_unit">
+                        <a class="flex items-center @if (request()->is('docs/api/civilian/edit_civilian')) !text-purple-500 @endif"
+                            href="/docs/api/civilian/edit_civilian">
                             Edit Civilian
                         </a>
                     </li>
@@ -262,8 +269,8 @@
                         <hr>
                     </li>
                     <li class="ml-2">
-                        <a class="flex items-center @if (request()->is('docs/api/emergency/civilian_lookup')) !text-purple-500 @endif"
-                            href="/docs/api/emergency/get_calls">
+                        <a class="flex items-center @if (request()->is('docs/api/civilian/register_vehicle')) !text-purple-500 @endif"
+                            href="/docs/api/civilian/register_vehicle">
                             Register Vehicle
                         </a>
                     </li>
