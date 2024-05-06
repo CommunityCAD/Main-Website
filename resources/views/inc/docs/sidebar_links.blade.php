@@ -269,7 +269,15 @@
                     </li>
                 </ul>
             </li>
-
         </ul>
+    </div>
+    <div class="flex flex-wrap items-center md:justify-between justify-center">
+        <div class="w-full px-4 mx-auto text-center">
+            <div class="text-sm text-blueGray-500 font-semibold py-1">
+                Made with ❤️ by <a class="text-blueGray-500 hover:text-blueGray-800" href="https://gages.space">
+                    Gage's
+                    Space</a>.
+            </div>
+        </div>
     </div>
 </div>

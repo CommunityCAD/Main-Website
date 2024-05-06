@@ -31,5 +31,5 @@
 }
 
 .text-link {
-    @apply text-base font-semibold text-blue-400 hover:underline;
+    @apply font-semibold text-blue-400 hover:underline;
 }

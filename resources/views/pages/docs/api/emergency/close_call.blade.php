@@ -77,7 +77,7 @@
                                     status</td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">string</td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">Status of Call.
-                                    <a class="underline" href="#status_codes">
+                                    <a class="text-link" href="#status_codes">
                                         List of all status codes options.
                                     </a>
                                 </td>

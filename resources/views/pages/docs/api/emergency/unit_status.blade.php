@@ -75,7 +75,7 @@
                                 <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
                                     status</td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm">string</td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm">New status. <a class="underline"
+                                <td class="whitespace-nowrap px-3 py-4 text-sm">New status. <a class="text-sm text-link"
                                         href="#status_options">Accepted Status Options</a>
                                 </td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-red-500">Required</td>
