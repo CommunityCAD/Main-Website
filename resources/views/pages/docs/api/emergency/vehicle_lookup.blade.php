@@ -71,6 +71,23 @@
                                 </td>
                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-red-500">Required</td>
                             </tr>
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
+                                    user_id</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm">number</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm">User ID to save the plate to.
+                                </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-yellow-500">""</td>
+                            </tr>
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium sm:pl-0">
+                                    save_plate</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm">bool</td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm">If you want to save the plate to the ALPR in
+                                    the CAD for lookup and linking.
+                                </td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-yellow-500">false</td>
+                            </tr>
                         </tbody>
                     </table>
 
@@ -80,7 +97,9 @@
                         <span class="flex gap-4">
                             <pre class="flex-1">
 {
-    "plate": "ABC123"
+    "plate": "ABC123",
+    "user_id":123456789123456789,
+    "save_plate": true
 }</pre>
                         </span>
                     </code>
