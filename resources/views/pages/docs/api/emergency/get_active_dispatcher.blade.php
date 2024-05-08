@@ -76,7 +76,7 @@
                     </code>
 
                     <h2 class="mt-16 text-lg font-semibold tracking-tight" id="example_responses">Responses</h2>
-                    <p>200 A successful call.</p>
+                    <p>200 A successful call with Dispatch active.</p>
 
                     <code
                         class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
@@ -111,7 +111,7 @@
                         </span>
                     </code>
 
-                    <p>200 with error message if the dispatch is not active.</p>
+                    <p>200 A successful call with Dispatch not active</p>
                     <code
                         class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
                         <span class="flex gap-4">
