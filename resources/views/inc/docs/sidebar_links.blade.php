@@ -134,6 +134,12 @@
                             Get Active Unit
                         </a>
                     </li>
+                    <li class="ml-2">
+                        <a class="flex items-center @if (request()->is('docs/api/emergency/get_active_dispatcher')) !text-purple-500 @endif"
+                            href="/docs/api/emergency/get_active_dispatcher">
+                            Get Active Dispatcher
+                        </a>
+                    </li>
                     <li>
                         <hr>
                     </li>
