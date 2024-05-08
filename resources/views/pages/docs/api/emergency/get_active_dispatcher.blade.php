@@ -87,24 +87,55 @@
     "message": "Active Dispatcher on duty.",
     "data": [
         {
-            "id": 95,
-            "user_id": 123456789123456789,
+            "id": 96,
+            "user_id": 188790560658685954,
             "user_department_id": 21,
             "officer_id": 761320351,
             "subdivision": null,
-            "group_callsign_id": null,
             "description": "Status Set To: AVL",
             "location": null,
             "status": "AVL",
-            "first_on_duty_at": "2024-05-08T02:56:06.000000Z",
-            "off_duty_at": null,
+            "first_on_duty_at": "05/07/2024 22:03:31",
+            "off_duty_at": "05/07/2024 22:03:35",
             "off_duty_type": null,
             "is_panic": 0,
-            "created_at": "2024-05-08T02:56:02.000000Z",
-            "updated_at": "2024-05-08T02:56:06.000000Z",
-            "deleted_at": null,
-            "department_type": 2,
-            "alpr": null
+            "created_at": "05/07/2024 22:03:28",
+            "updated_at": "05/07/2024 22:03:31",
+            "attached_calls": [],
+            "officer": {
+                "id": 761320351,
+                "user_id": 188790560658685954,
+                "first_name": "Kessie",
+                "last_name": "Martinez",
+                "full_name": "Kessie Martinez",
+                "formatted_name": "Kessie Martinez",
+                "picture": null,
+                "date_of_birth": "06/09/2009",
+                "phone_number": "+1 (565) 283-2569",
+                "gender": "Other",
+                "race": "African American",
+                "postal": 123,
+                "street": "Ut accusantium sed d",
+                "city": "Minim ab quis explic",
+                "full_address": "123 Ut accusantium sed d Minim ab quis explic",
+                "occupation": "Incidunt illum dol",
+                "height": "59",
+                "weight": "175",
+                "created_at": "05/07/2024 21:55:55",
+                "updated_at": "05/07/2024 21:55:55"
+            },
+            "user_department": {
+                "id": 21,
+                "user_id": 188790560658685954,
+                "badge_number": "test",
+                "rank": "test",
+                "department": {
+                    "id": 5,
+                    "name": "Communications",
+                    "initials": "DISP",
+                    "logo": "https://static.wikia.nocookie.net/ultimate-roleplay/images/c/cb/LCPD-GTA4-logo.png"
+                }
+            }
         }
     ]
 }</pre>
