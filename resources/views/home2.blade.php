@@ -194,7 +194,7 @@
                 </div>
                 <div class="bg-gray-800 px-4 py-2 rounded-xl mx-4 my-2">
                     <img alt="SOCA State Of California" class="h-48 mx-auto"
-                        src="{{ asset('images/default_images/communitycad.png') }}&">
+                        src="{{ asset('images/default_images/communitycad.png') }}">
                     <h3 class="text-center tracking-widest">SOCA State Of California</h3>
                     <p class="text-sm">
                     </p>
