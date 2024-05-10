@@ -187,7 +187,7 @@
                 </div>
                 <div class="bg-gray-800 px-4 py-2 rounded-xl mx-4 my-2">
                     <img alt="STG RolePlay" class="h-48 mx-auto"
-                        src="{{ asset('images/default_images/communitycad.png') }}">
+                        src="{{ asset('images/community_images/STG.png') }}">
                     <h3 class="text-center tracking-widest">STG RolePlay</h3>
                     <p class="text-sm">
                     </p>
