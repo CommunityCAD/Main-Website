@@ -179,30 +179,30 @@
                     </p>
                 </div>
                 <div class="bg-gray-800 px-4 py-2 rounded-xl mx-4 my-2">
-                    <img alt="Blacklight Roleplay" class="h-48 mx-auto"
-                        src="https://cdn.discordapp.com/attachments/1208870432833409085/1208992113430241322/blrp.png?ex=6625e625&is=66137125&hm=fe50f2cc7dd55d08ea9bbb4a4484ac022151f8abe23c66accf09262ae1e9ae89&">
-                    <h3 class="text-center tracking-widest">Blacklight Roleplay</h3>
+                    <img alt="McDouble Roleplay" class="h-48 mx-auto"
+                        src="{{ asset('images/default_images/communitycad.png') }}">
+                    <h3 class="text-center tracking-widest">McDouble Roleplay</h3>
                     <p class="text-sm">
                     </p>
                 </div>
                 <div class="bg-gray-800 px-4 py-2 rounded-xl mx-4 my-2">
-                    <img alt="South Dakota Roleplay" class="h-48 mx-auto"
-                        src="https://cdn.discordapp.com/attachments/1200892346984845495/1211330120191574077/giphy_1.gif?ex=662e6796&is=661bf296&hm=f269972869b906a4552a69bd6325ddc501bd015f2259d64b54852d88502d93f8&">
-                    <h3 class="text-center tracking-widest">South Dakota Roleplay</h3>
+                    <img alt="STG RolePlay" class="h-48 mx-auto"
+                        src="{{ asset('images/default_images/communitycad.png') }}">
+                    <h3 class="text-center tracking-widest">STG RolePlay</h3>
                     <p class="text-sm">
                     </p>
                 </div>
                 <div class="bg-gray-800 px-4 py-2 rounded-xl mx-4 my-2">
-                    <img alt="Operations San Andreas" class="h-48 mx-auto"
-                        src="https://cdn.discordapp.com/attachments/995112290091282503/1224885764723048520/OSA_NoBG.png?ex=661f1ec3&is=660ca9c3&hm=492f96052c8b734e1e5722eeae8a29e6de82c0ea6da37842a5d99e8b2e46a7b2&">
-                    <h3 class="text-center tracking-widest">Operations San Andreas</h3>
+                    <img alt="SOCA State Of California" class="h-48 mx-auto"
+                        src="{{ asset('images/default_images/communitycad.png') }}&">
+                    <h3 class="text-center tracking-widest">SOCA State Of California</h3>
                     <p class="text-sm">
                     </p>
                 </div>
                 <div class="bg-gray-800 px-4 py-2 rounded-xl mx-4 my-2">
-                    <img alt="South Embassy Roleplay" class="h-48 mx-auto"
-                        src="https://cdn.discordapp.com/icons/1211461960919678986/42e985044986c6b63765ec2a3b049f3c.png?size=4096">
-                    <h3 class="text-center tracking-widest">South Embassy Roleplay</h3>
+                    <img alt="Concord State Office" class="h-48 mx-auto"
+                        src="{{ asset('images/default_images/communitycad.png') }}">
+                    <h3 class="text-center tracking-widest">Concord State Office</h3>
                     <p class="text-sm">
                     </p>
                 </div>
