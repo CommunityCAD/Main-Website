@@ -282,6 +282,37 @@
                     </li>
                 </ul>
             </li>
+            <li class="relative px-3 py-2 flex items-center mt-4">
+                <svg class="h-4 w-4" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <span class="ml-4">Other Links</span>
+            </li>
+
+            <li class="ml-6 relative px-4 py-2">
+                <a class="flex items-center @if (request()->is('docs/change_log')) !text-purple-500 @endif"
+                    href="/docs/change_log">
+                    <span>Change Log</span>
+                </a>
+            </li>
+
+            <li class="ml-6 relative px-4 py-2">
+                <a class="flex items-center @if (request()->is('docs/faq')) !text-purple-500 @endif"
+                    href="/docs/faq">
+                    <span>FaQ</span>
+                </a>
+            </li>
+
+            <li class="ml-6 relative px-4 py-2">
+                <a class="flex items-center @if (request()->is('docs/jobs')) !text-purple-500 @endif"
+                    href="/docs/jobs">
+                    <span>Jobs</span>
+                </a>
+            </li>
         </ul>
     </div>
     <div class="flex flex-wrap items-center md:justify-between justify-center">
